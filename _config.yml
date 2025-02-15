@@ -48,6 +48,7 @@ menu:
     url:               /research/
   - title:             CV
     url:               /assets/pdf/AlyssaRusonik_CV.pdf
+    target:            _blank
   # - title:             About
   #   url:               /about/
 
