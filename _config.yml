@@ -283,6 +283,16 @@ hydejack:
     precache_assets:
       - /assets/img/swipe.svg
 
+  # Add custom CSS
+  custom_css:
+    - |
+      .sidebar-nav-item {
+        font-size: 1.2em !important;
+      }
+      .sidebar-title {
+        font-size: 1.3em !important;
+      }
+
 
 # Collections
 # ----------------------------------------------------------------------------------------
