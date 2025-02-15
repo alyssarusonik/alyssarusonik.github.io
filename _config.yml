@@ -46,6 +46,8 @@ author: alyssa
 menu:
   - title:             Research
     url:               /research/
+  - title:             CV
+    url:               /assets/pdf/AlyssaRusonik_CV.pdf
   # - title:             About
   #   url:               /about/
 
