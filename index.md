@@ -1,16 +1,13 @@
 ---
 layout: about
-image: 
-  path: /assets/img/profile.jpg
+# image: 
+#   path: /assets/img/profile.jpg
 description: >
   PhD student in Finance at HEC Paris
-
 hide_description: true
-# redirect_from:
-#   - /download/
 ---
 
-![Alyssa Rusonik](/assets/img/profile.jpg){:.lead width="200" height="200"}
+![](/assets/img/profile.jpg)
 
 I'm a PhD student in Finance at HEC Paris. My main research interests presently lie at the intersection of decision theory and finance, and in financial and economic history.
 
