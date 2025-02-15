@@ -49,7 +49,8 @@ menu:
   - title:             CV
     url:               /assets/pdf/AlyssaRusonik_CV.pdf
     target:            _blank
-    rel:              noopener
+    rel:              noopener noreferrer
+    html:             true
   # - title:             About
   #   url:               /about/
 
@@ -130,7 +131,7 @@ defaults:
       theme_color:     rgb(120, 144, 156)
       accent_image:
         background:    rgb(120, 144, 156)
-        overlay:       true
+        overlay:       0.1
 
   # Don't include documents in assets in the sitemap
   - scope:
