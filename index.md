@@ -7,7 +7,7 @@ description: >
 hide_description: true
 ---
 
-<div style="float: right; width: 200px; margin-left: 20px;">
+<div style="float: right; width: 300px; margin-left: 20px;">
 <img src="/assets/img/profile.jpg" width="300">
 </div>
 
