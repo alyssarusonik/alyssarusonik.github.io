@@ -40,12 +40,7 @@ keywords:              []
 # logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
-author:
-  # Used by `jekyll-feed`:
-  name:                Alyssa Rusonik
-  email:               alyssa.rusonik@hec.edu
-  # # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+author: alyssa
 
 # Add links to the sidebar.
 menu:

@@ -1,12 +1,13 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 alyssa:
-  name: Alyssa Rusonik
-  email: alyssa.rusonik@hec.edu
+  name:             Alyssa Rusonik
+  email:            alyssa.rusonik@hec.edu
 
   # Used at the bottom of each page and at the top of the `about` layout
-  about: |
-    I'm a PhD student in Finance at HEC Paris. My main research interests presently lie at the intersection of decision theory and finance, and in financial and economic history.
+  about:            >
+    I'm a PhD student in Finance at HEC Paris. My main research interests presently lie at the intersection 
+    of decision theory and finance, and in financial and economic history.
 
   picture:
     path: /assets/img/profile.jpg
