@@ -1,8 +1,9 @@
 ---
-layout: list
+layout: page
 title: Research
 description: >
   Working papers and publications
+hide_description: true
 grouped: true
 ---
 

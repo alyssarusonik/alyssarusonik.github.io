@@ -181,6 +181,8 @@ kramdown:
 # These settings are specific to Hydejack.
 
 hydejack:
+  no_social: true
+  no_social_icons: true
   # Configure the order of complementary content on blog posts
   # post_addons:         [about, newsletter, related, random, comments]
 
