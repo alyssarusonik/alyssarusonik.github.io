@@ -8,7 +8,7 @@ hide_description: true
 ---
 
 <div style="float: right; width: 300px; margin-left: 20px;">
-<img src="/assets/img/profile.jpg" width="300">
+<img src="/assets/img/profile.jpg" width="350">
 </div>
 
 I'm a PhD student in Finance at HEC Paris. My main research interests presently lie at the intersection of decision theory and finance, and in financial and economic history.
