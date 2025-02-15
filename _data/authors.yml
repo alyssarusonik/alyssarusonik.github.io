@@ -9,8 +9,7 @@ alyssa:
     I'm a PhD student in Finance at HEC Paris. My main research interests presently lie at the intersection 
     of decision theory and finance, and in financial and economic history.
 
-  picture:
-    src:            /assets/img/profile.jpg
+  picture:          https://alyssarusonik.github.io/assets/img/profile.jpg
 
 
 # # Social media icons in sidebar
