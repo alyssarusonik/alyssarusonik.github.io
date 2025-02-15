@@ -40,10 +40,10 @@ keywords:              []
 # logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
-author:
+author: alyssa
   # Used by `jekyll-feed`:
-  name:                Alyssa Rusonik
-  email:               alyssa.rusonik@hec.edu
+  # name:                Alyssa Rusonik
+  # email:               alyssa.rusonik@hec.edu
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
