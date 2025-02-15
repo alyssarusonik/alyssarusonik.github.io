@@ -22,6 +22,6 @@ _This paper has been the recipient of the Arthur Hosios award and the Frank D. L
 - Description of the paper
 - [PDF](/assets/pdf/paper2.pdf){:target="_blank"} -->
 
-## Pre-PhD Publication
+## Pre-PhD Publications
 ["Restricted Invertibility of Continuous Matrix Functions,"](/assets/pdf/oam-16-78-reprint.pdf){:target="_blank"} with Adrian Fan, Jack Montemurro, Pavlos Motakis, Naina Praveen, Paul Skoufranis and Noam Tobin.
 _Operators and Matrices_, 2022, 16(4): 1191-1217.
