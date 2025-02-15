@@ -1,6 +1,7 @@
 ---
 layout: about
-image: /assets/img/profile.jpg
+image: 
+  path: /assets/img/profile.jpg
 description: >
   PhD student in Finance at HEC Paris
 
