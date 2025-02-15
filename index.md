@@ -7,7 +7,7 @@ description: >
 hide_description: true
 ---
 
-![](/assets/img/profile.jpg)
+![](/assets/img/profile.jpg){:width="200px"}
 
 I'm a PhD student in Finance at HEC Paris. My main research interests presently lie at the intersection of decision theory and finance, and in financial and economic history.
 
