@@ -49,6 +49,7 @@ menu:
   - title:             CV
     url:               /assets/pdf/AlyssaRusonik_CV.pdf
     target:            _blank
+    rel:              noopener
   # - title:             About
   #   url:               /about/
 
