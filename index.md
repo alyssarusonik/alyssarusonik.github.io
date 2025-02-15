@@ -7,7 +7,9 @@ description: >
 hide_description: true
 ---
 
-<img src="/assets/img/profile.jpg" width="200" style="float: right; margin: 0 0 20px 20px;">
+<div style="float: right; width: 150px; margin-left: 20px;">
+<img src="/assets/img/profile.jpg" width="300">
+</div>
 
 I'm a PhD student in Finance at HEC Paris. My main research interests presently lie at the intersection of decision theory and finance, and in financial and economic history.
 
