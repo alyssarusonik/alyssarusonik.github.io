@@ -10,7 +10,7 @@ alyssa:
     of decision theory and finance, and in financial and economic history.
 
   picture:
-    path: /assets/img/profile.jpg
+    path:           /assets/img/profile.jpg
     srcset:
       1x: /assets/img/profile.jpg
       2x: /assets/img/profile.jpg
