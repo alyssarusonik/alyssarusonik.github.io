@@ -7,8 +7,14 @@ description: >
 hide_description: true
 ---
 
-<div style="float: right; width: 300px; margin-left: 20px;">
-<img src="/assets/img/profile.jpg" width="350">
+<div style="float: right; width: 300px; margin-left: 40px; margin-bottom: 30px; margin-top: 10px; 
+    @media (max-width: 600px) {
+        float: none;
+        width: 100%;
+        margin: 0 auto 20px auto;
+        display: block;
+    }">
+<img src="/assets/img/profile.jpg" width="300" style="width: 100%;">
 </div>
 
 <div style="font-size: 1.2em;">
