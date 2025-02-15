@@ -289,18 +289,16 @@ hydejack:
       .sidebar-title {
         font-size: 1.5em !important;
       }
-      .sidebar-bg {
-        position: relative;
-      }
-      .sidebar-bg::after {
+      .sidebar-about::after {
         content: "J.M.W. Turner, \"Venice, The Mouth of the Grand Canal\", c.1840";
+        display: block;
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        bottom: 15px;
+        right: 15px;
         font-size: 0.7em;
-        color: rgba(255, 255, 255, 0.4);
+        color: rgba(255, 255, 255, 0.5);
         font-style: italic;
-        z-index: 2;
+        pointer-events: none;
       }
 
 
