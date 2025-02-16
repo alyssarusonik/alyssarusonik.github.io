@@ -289,8 +289,8 @@ hydejack:
       .sidebar-title {
         font-size: 1.5em !important;
       }
-      @media screen and (min-width: 1664px) {
-        body:not(.no-large-headings) .sidebar::after {
+      @media screen and (min-width: 1200px) {
+        .sidebar::after {
           content: "J.M.W. Turner, \"Venice, The Mouth of the Grand Canal\", c.1840";
           display: block;
           position: absolute;
