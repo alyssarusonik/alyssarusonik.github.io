@@ -88,14 +88,7 @@ remote_theme: hydecorp/hydejack
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          
-  path: |
-    <div style="position: relative; width: 100%; height: 100%;">
-      <img src="/assets/img/turner.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-      <div style="position: absolute; bottom: 1rem; left: 2rem; font-size: 0.7em; color: rgba(255, 255, 255, 0.75); font-style: italic; max-width: 18rem;">
-        J.M.W. Turner, "Venice, The Mouth of the Grand Canal", c.1840
-      </div>
-    </div>
+accent_image:          /assets/img/turner.jpg
 accent_color:          rgb(176, 190, 197)  # A soft blue-grey from the water/sky
 
 # This is used for the `theme-color` meta tag,
@@ -295,6 +288,20 @@ hydejack:
       }
       .sidebar-title {
         font-size: 1.5em !important;
+      }
+      @media screen and (min-width: 1664px) {
+        body:not(.no-large-headings) .sidebar::after {
+          content: "J.M.W. Turner, \"Venice, The Mouth of the Grand Canal\", c.1840";
+          display: block;
+          position: absolute;
+          bottom: 1rem;
+          left: 2rem;
+          font-size: 0.7em;
+          color: rgba(255, 255, 255, 0.75);
+          font-style: italic;
+          max-width: 18rem;
+          z-index: 2;
+        }
       }
 
 
