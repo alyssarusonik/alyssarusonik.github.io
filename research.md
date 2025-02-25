@@ -8,7 +8,7 @@ grouped: true
 ---
 
 ## Working Papers
-"The Economic Origins of Palace-Building in Renaissance Rome"
+"Long-term Institutional Change and Economic Revival: Evidence from Palace-Building in Renaissance Rome"
 <!-- (/assets/pdf/paper.pdf){:target="_blank"} -->
 <details>
 <summary>Abstract</summary>
