@@ -8,8 +8,7 @@ grouped: true
 ---
 
 ## Working Papers
-"Institutional Commitment and Economic Revival: Evidence from Palace-Building in Renaissance Rome"
-<!-- (/assets/pdf/paper.pdf){:target="_blank"} -->
+["Institutional Commitment and Economic Revival: Evidence from Palace-Building in Renaissance Rome"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5168235){:target="_blank"}
 <details>
 <summary>Abstract</summary>
 I study the recovery of the Roman economy following the papacy’s sojourn in France (1309-1377). I show that a reform of inheritance laws in 1480 gave rise to an era of palace-building resulting in the construction of over 35% of palaces built in Roman history. Using a novel dataset that links information on investment projects and patrons, I provide evidence that the reform, which allowed prelates to bequeath their possessions, caused a significant increase of prelate palace-building relative to their lay counterparts (who were not directly affected by the reform). Initial prelate investment then guaranteed that the papacy would remain in Rome long-term, which eventually incentivized laymen to invest – though the return of the papacy to Rome itself had failed to induce investment. Increased confidence in Rome's future also manifested in more ambitious projects, across all patrons. I disentangle the effect of commitment to long-term presence from the effects of contemporaneous papal presence in Rome to show that the irreversibility of institutional change is a necessary condition for successful intervention.
