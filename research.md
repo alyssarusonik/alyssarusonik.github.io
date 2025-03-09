@@ -16,6 +16,8 @@ I study the recovery of the Roman economy following the papacy’s sojourn in Fr
 _This paper has been the recipient of the Arthur Hosios Award and the Frank D. Lewis Memorial Prize._
 
 <!-- ## Work in Progress
+"Prospective Learning" with Yves Le Yaouanq
+[Yves Le Yaouanq](https://sites.google.com/view/yvesleyaouanq){:target="_blank"}{:.no-mark-external}
 "Title of Another Paper"
 - With [Co-author Name](co-author-website)
 - Description of the paper
