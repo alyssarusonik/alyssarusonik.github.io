@@ -457,3 +457,19 @@ sass:
 #browser tab icon:
 # favicon: "✒️"
 favicon: /assets/img/favicon_io/favicon.ico
+
+# SEO Tag settings
+webmaster_verifications:
+  google: true
+
+# Site image for social media and search results
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/favicon_io/apple-touch-icon.png
+
+# Favicon configuration
+favicon: /assets/img/favicon_io/favicon.ico
+apple_touch_icon: /assets/img/favicon_io/apple-touch-icon.png
+site_icon: /assets/img/favicon_io/apple-touch-icon.png  # For search engines
