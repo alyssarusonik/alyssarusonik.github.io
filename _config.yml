@@ -37,7 +37,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo: /assets/img/favicon_io/apple-touch-icon.png
+# logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author: alyssa
@@ -283,9 +283,6 @@ hydejack:
   # Add custom CSS
   custom_css:
     - |
-      .sidebar-about .avatar {
-        display: none !important;
-      }
       .sidebar-nav-item {
         font-size: 1.3em !important;
       }
@@ -294,7 +291,7 @@ hydejack:
       }
       @media screen and (min-width: 1200px) {
         body .sidebar {
-          position: relative;
+          position: relative;  /* Make sure sidebar can handle absolute positioning */
         }
         body .sidebar::after {
           content: "J.M.W. Turner, \"Venice, The Mouth of the Grand Canal\", c.1840";
@@ -306,8 +303,8 @@ hydejack:
           color: rgba(255, 255, 255, 0.75);
           font-style: italic;
           max-width: 18rem;
-          z-index: 100;
-          pointer-events: none;
+          z-index: 100;  /* Increased to ensure visibility */
+          pointer-events: none;  /* Ensure it doesn't interfere with clicks */
         }
       }
 
@@ -460,5 +457,3 @@ sass:
 #browser tab icon:
 # favicon: "✒️"
 favicon: /assets/img/favicon_io/favicon.ico
-apple_touch_icon: /assets/img/favicon_io/apple-touch-icon.png
-webmanifest: /assets/img/favicon_io/site.webmanifest
