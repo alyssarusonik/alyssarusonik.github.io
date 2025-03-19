@@ -467,6 +467,7 @@ defaults:
   - scope:
       path: ""
     values:
+      title: "Alyssa Rusonik"
       image: /assets/img/favicon_io/apple-touch-icon.png
 
 # Favicon configuration
