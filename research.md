@@ -18,7 +18,7 @@ _This paper has been the recipient of the [Georges Gallais-Hamonno Prize in Hist
 ## Work in Progress
 "The Evolving Credibility of Stories"
 
-"Biases in Prospective Learning" with [Yves Le Yaouanq](https://sites.google.com/view/yvesleyaouanq){:target="_blank"}{:.no-mark-external}
+"Biases in Prospective Learning" with [Yves Le Yaouanq](https://sites.google.com/view/yvesleyaouanq){:target="_blank"}{:.no-mark-external} and [Peter Schwardmann](https://sites.google.com/site/peterschwardmann/home){:target="_blank"}{:.no-mark-external}
 
 
 ## Pre-PhD Publications
