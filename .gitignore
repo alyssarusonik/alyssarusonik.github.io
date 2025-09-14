@@ -46,3 +46,7 @@ _zip
 
 /assets/js/*hydejack-*
 /_sass/*/__*__/*
+
+# PDF-only directory - ignore everything except PDFs
+docs/*
+!docs/CV/AlyssaRusonik_CV.pdf

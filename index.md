@@ -20,5 +20,5 @@ hide_description: true
 <div style="font-size: 1.2em;">
 Welcome to my website! I am a third-year PhD student in Finance at HEC Paris. My research interests presently lie at the intersection of decision theory and finance, and in financial and economic history.
 <br><br>
-You can reach me at alyssa.rusonik@hec.edu, and my CV is available <a href="/assets/pdf/AlyssaRusonik_CV.pdf" target="_blank">here</a>.
+You can reach me at alyssa.rusonik@hec.edu, and my CV is available <a href="/docs/CV/AlyssaRusonik_CV.pdf" target="_blank">here</a>.
 </div>
