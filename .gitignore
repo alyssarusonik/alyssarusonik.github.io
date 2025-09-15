@@ -49,4 +49,13 @@ _zip
 
 # PDF-only directory - ignore everything except PDFs
 docs/*
+!docs/CV/
+docs/CV/*
 !docs/CV/AlyssaRusonik_CV.pdf
+
+
+# Template for ignoring a directory and all its contents except one file
+# mydir/*
+# !mydir/subdir/
+# mydir/subdir/*
+# !mydir/subdir/keepme.txt
