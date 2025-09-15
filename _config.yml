@@ -343,7 +343,7 @@ include:
   - _routes.json
   - .well-known
   - LICENSE.md
-  - docs/CV/
+  - docs/
 
 
 # Plugins
