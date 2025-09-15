@@ -47,7 +47,7 @@ menu:
   - title:             Research
     url:               /research/
   - title:             CV
-    url:               "javascript:window.open('/assets/pdf/AlyssaRusonik_CV.pdf', '_blank')"
+    url:               "javascript:window.open('/docs/CV/AlyssaRusonik_CV.pdf', '_blank')"
   # - title:             About
   #   url:               /about/
 
@@ -343,6 +343,7 @@ include:
   - _routes.json
   - .well-known
   - LICENSE.md
+  - docs/CV/
 
 
 # Plugins
