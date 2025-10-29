@@ -52,22 +52,50 @@ ul li::before {
 }
 
 /* ------------------------------
-   LINK STYLING
+   LINK STYLING (content area only, not sidebar)
+   Blue-grey tones from Turner's "Venice, The Mouth of the Grand Canal"
    ------------------------------ */
-a {
-  color: #003366;            /* deep academic blue */
+
+/* Light mode - apply to bold text (paper titles) */
+.content strong, .markdown-body strong, main strong, article strong {
+  color: rgb(85, 110, 125);             /* deeper blue-grey from the water/architecture */
+}
+
+/* Light mode link colors */
+.content a, .markdown-body a, main a, article a {
+  color: inherit;                       /* inherit the blue-grey from parent (if bold) or default */
   text-decoration: none;
   transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
-a:hover, a:focus {
-  color: #001f4d;            /* slightly darker blue on hover */
+.content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
+.content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
+  color: rgb(120, 144, 156);            /* lighter blue-grey on hover (matches your theme_color) */
   text-decoration: underline;
 }
 
-/* visually tone down visited links a bit */
-a:visited {
-  color: #4b4b8f;
+.content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
+  color: rgb(95, 110, 120);             /* slightly muted visited link */
+}
+
+/* Dark mode link colors - lighter tones for better contrast */
+@media (prefers-color-scheme: dark) {
+  .content strong, .markdown-body strong, main strong, article strong {
+    color: rgb(176, 190, 197);          /* lighter blue-grey (matches your accent_color) */
+  }
+
+  .content a, .markdown-body a, main a, article a {
+    color: inherit;                     /* inherit the blue-grey from parent (if bold) */
+  }
+
+  .content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
+  .content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
+    color: rgb(200, 210, 215);          /* even lighter on hover for dark mode */
+  }
+
+  .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
+    color: rgb(160, 175, 185);          /* slightly muted for dark mode */
+  }
 }
 
 /* keep external link icons subtle if enabled */
@@ -101,11 +129,11 @@ a:visited {
     display: block;
     position: absolute;
     bottom: 1rem;
-    left: 2rem;
+    right: 2rem;
     font-size: 0.7em;
     color: rgba(255, 255, 255, 0.75);
     font-style: italic;
-    max-width: 18rem;
+    white-space: nowrap;  /* Keep caption on one line */
     z-index: 100;  /* Increased to ensure visibility */
     pointer-events: none;  /* Ensure it doesn't interfere with clicks */
   }
