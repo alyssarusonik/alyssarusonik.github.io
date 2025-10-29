@@ -173,11 +173,10 @@ kramdown:
   footnote_backlink:   '&#x21a9;&#xfe0e;'
 
 
+
 # Hydejack Settings
 # ----------------------------------------------------------------------------------------
 # These settings are specific to Hydejack.
-
-hydejack:
 
 hydejack:
   custom_css:
