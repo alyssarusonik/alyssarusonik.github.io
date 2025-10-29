@@ -56,45 +56,37 @@ ul li::before {
    Blue-grey tones from Turner's "Venice, The Mouth of the Grand Canal"
    ------------------------------ */
 
-/* Light mode - apply to bold text (paper titles) */
-.content strong, .markdown-body strong, main strong, article strong {
-  color: rgb(85, 110, 125);             /* deeper blue-grey from the water/architecture */
-}
-
 /* Light mode link colors */
 .content a, .markdown-body a, main a, article a {
-  color: inherit;                       /* inherit the blue-grey from parent (if bold) or default */
+  color: inherit;                       /* use default black text color */
   text-decoration: none;
   transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 .content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
 .content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
-  color: rgb(120, 144, 156);            /* lighter blue-grey on hover (matches your theme_color) */
+  color: rgb(85, 110, 125) !important;  /* blue-grey from Turner's water on hover */
   text-decoration: underline;
 }
 
 .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
-  color: rgb(95, 110, 120);             /* slightly muted visited link */
+  color: inherit;                       /* keep default color for visited */
 }
 
 /* Dark mode link colors - lighter tones for better contrast */
 @media (prefers-color-scheme: dark) {
-  .content strong, .markdown-body strong, main strong, article strong {
-    color: rgb(176, 190, 197);          /* lighter blue-grey (matches your accent_color) */
-  }
-
   .content a, .markdown-body a, main a, article a {
-    color: inherit;                     /* inherit the blue-grey from parent (if bold) */
+    color: inherit;                     /* use default white text color */
   }
 
   .content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
   .content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
-    color: rgb(200, 210, 215);          /* even lighter on hover for dark mode */
+    color: rgb(176, 190, 197) !important; /* lighter blue-grey on hover (matches accent_color) */
+    text-decoration: underline;
   }
 
   .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
-    color: rgb(160, 175, 185);          /* slightly muted for dark mode */
+    color: inherit;                     /* keep default color for visited */
   }
 }
 
