@@ -29,14 +29,15 @@
 
 <!-- Critical CSS to prevent FOUC (Flash of Unstyled Content) -->
 <style>
-  /* Smooth fade-in for entire sidebar including background image */
-  .sidebar {
+  /* Sidebar background image appears immediately - only hide text content */
+  .sidebar > * {
     opacity: 0 !important;
     transition: opacity 0.2s ease-out !important;
   }
-  .loaded .sidebar {
+  .loaded .sidebar > * {
     opacity: 1 !important;
   }
+  
   /* Hide sidebar caption initially */
   .sidebar::after {
     opacity: 0 !important;
@@ -66,13 +67,8 @@
 </style>
 
 <script>
-  // Start fade-in almost immediately
-  (function() {
-    // Trigger as soon as this script runs (which is in <head>)
-    setTimeout(function() {
-      document.documentElement.classList.add('loaded');
-    }, 10); // Very minimal delay, start fade-in almost immediately
-  })();
+  // Start text fade-in immediately - CSS above is already parsed
+  document.documentElement.classList.add('loaded');
 </script>
 
 <script type="application/ld+json">
