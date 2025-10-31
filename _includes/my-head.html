@@ -18,6 +18,9 @@
 <meta name="description" content="Alyssa Rusonik - PhD Student in Finance at HEC Paris">
 <meta name="robots" content="index, follow">
 
+<!-- Preload critical images to prevent flash -->
+<link rel="preload" as="image" href="/assets/img/turner.jpg">
+
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="Alyssa Rusonik">
 <meta property="og:description" content="Alyssa Rusonik - PhD Student in Finance at HEC Paris">
@@ -26,19 +29,18 @@
 
 <!-- Critical CSS to prevent FOUC (Flash of Unstyled Content) -->
 <style>
-  /* Hide sidebar text content initially, but keep background image visible */
-  .sidebar > * {
+  /* Smooth fade-in for entire sidebar including background image */
+  .sidebar {
     opacity: 0 !important;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.3s ease-out !important;
   }
-  /* Show sidebar content once page is fully loaded */
-  .loaded .sidebar > * {
+  .loaded .sidebar {
     opacity: 1 !important;
   }
-  /* Also hide sidebar caption initially */
+  /* Hide sidebar caption initially */
   .sidebar::after {
     opacity: 0 !important;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.3s ease-out;
   }
   /* Show caption when loaded */
   .loaded .sidebar::after {
