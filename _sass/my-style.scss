@@ -163,6 +163,31 @@ li {
 /* Fix sidebar sliver - hide any horizontal overflow */
 body, html {
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Prevent horizontal scrolling on all major containers */
+#_yPushState, #_drawer, .page, .content {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Ensure the sidebar doesn't cause overflow */
+.sidebar {
+  overflow-x: hidden;
+}
+
+/* Fix for mobile - ensure drawer doesn't cause horizontal scroll */
+@media screen and (max-width: 1199px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .page {
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (min-width: 1200px) {
