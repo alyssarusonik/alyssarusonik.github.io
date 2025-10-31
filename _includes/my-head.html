@@ -32,7 +32,7 @@
   /* Smooth fade-in for entire sidebar including background image */
   .sidebar {
     opacity: 0 !important;
-    transition: opacity 0.3s ease-out !important;
+    transition: opacity 0.2s ease-out !important;
   }
   .loaded .sidebar {
     opacity: 1 !important;
@@ -40,7 +40,7 @@
   /* Hide sidebar caption initially */
   .sidebar::after {
     opacity: 0 !important;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.2s ease-out;
   }
   /* Show caption when loaded */
   .loaded .sidebar::after {
@@ -66,12 +66,12 @@
 </style>
 
 <script>
-  // Start fade-in immediately, don't wait for full DOM load
+  // Start fade-in almost immediately
   (function() {
     // Trigger as soon as this script runs (which is in <head>)
     setTimeout(function() {
       document.documentElement.classList.add('loaded');
-    }, 50); // Minimal delay just to ensure CSS is parsed
+    }, 10); // Very minimal delay, start fade-in almost immediately
   })();
 </script>
 
