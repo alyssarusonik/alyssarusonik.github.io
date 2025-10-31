@@ -104,19 +104,19 @@ li {
   /* Always underline paper titles (bold links) in dark mode too */
   .content a strong, .markdown-body a strong, main a strong, article a strong {
     text-decoration: underline;
-    text-decoration-color: rgba(190, 210, 225, 0.4);  /* faded lighter Turner blue for dark mode */
+    text-decoration-color: rgba(180, 180, 180, 0.4);  /* neutral light grey, no blue */
   }
 
   .content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
   .content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
-    color: rgb(190, 210, 225) !important; /* much lighter blue-grey for better legibility on dark background */
+    color: rgb(210, 225, 235) !important; /* very light blue-grey for excellent legibility on dark background */
     text-decoration: underline;
   }
 
   /* More vibrant underline on hover for paper titles in dark mode */
   .content a:hover strong, .markdown-body a:hover strong, main a:hover strong, article a:hover strong,
   .content a:focus strong, .markdown-body a:focus strong, main a:focus strong, article a:focus strong {
-    text-decoration-color: rgb(190, 210, 225);
+    text-decoration-color: rgb(210, 225, 235);
   }
 
   .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
