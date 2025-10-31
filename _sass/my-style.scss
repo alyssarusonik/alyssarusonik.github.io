@@ -161,7 +161,7 @@ li {
 }
 
 /* Fix sidebar sliver - hide any horizontal overflow */
-body:not(.drawer--opened) {
+body, html {
   overflow-x: hidden;
 }
 
