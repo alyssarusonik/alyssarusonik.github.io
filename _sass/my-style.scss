@@ -160,6 +160,35 @@ li {
   font-size: 1.5em !important;
 }
 
+/* ------------------------------
+   SIDEBAR FIX - Hide sliver when drawer is closed on smaller screens
+   ------------------------------ */
+@media screen and (max-width: 1199px) {
+  /* Prevent sidebar sliver from showing */
+  body:not(.drawer-opened) {
+    overflow-x: hidden;
+  }
+  
+  /* Push drawer further off-screen when closed to hide sliver */
+  #_drawer:not(.opened) {
+    margin-left: -5px;
+  }
+  
+  /* Alternative approach: ensure no part of sidebar is visible when closed */
+  .sidebar-sticky,
+  .sidebar-bg {
+    left: -1px;
+  }
+  
+  /* When drawer is opened, reset positions */
+  #_drawer.opened .sidebar-sticky,
+  #_drawer.opened .sidebar-bg,
+  body.drawer-opened .sidebar-sticky,
+  body.drawer-opened .sidebar-bg {
+    left: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   body .sidebar {
     position: relative;  /* Make sure sidebar can handle absolute positioning */
