@@ -76,28 +76,18 @@ li {
 /* Always underline paper titles (bold links) in research section */
 .content a strong, .markdown-body a strong, main a strong, article a strong {
   text-decoration: underline;
-  text-decoration-color: rgba(70, 105, 130, 0.35);  /* faded Turner blue for subtle underline */
+  text-decoration-color: rgba(128, 128, 128, 0.5);  /* greyish for subtle underline */
   transition: text-decoration-color 0.2s ease;  /* smooth underline color transition */
 }
 
 /* On hover, only change underline color for paper titles - keep text black */
 .content a:hover strong, .markdown-body a:hover strong, main a:hover strong, article a:hover strong,
 .content a:focus strong, .markdown-body a:focus strong, main a:focus strong, article a:focus strong {
-  text-decoration-color: rgb(70, 105, 130);  /* vibrant Turner blue underline on hover */
+  text-decoration-color: rgba(0, 0, 0, 0.9);  /* black underline on hover */
 }
 
 .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
   color: inherit;                       /* keep default color for visited */
-}
-
-/* Remove underlines from sidebar social/email icons specifically */
-.sidebar .social a,
-.sidebar .social a:hover,
-.sidebar .social a:focus,
-.sidebar-social a,
-.sidebar-social a:hover,
-.sidebar-social a:focus {
-  text-decoration: none !important;
 }
 
 /* Dark mode link colors - lighter tones for better contrast */
@@ -122,16 +112,39 @@ li {
   .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
     color: inherit;                     /* keep default color for visited */
   }
-  
-  /* Remove underlines from sidebar social/email icons in dark mode too */
-  .sidebar .social a,
-  .sidebar .social a:hover,
-  .sidebar .social a:focus,
-  .sidebar-social a,
-  .sidebar-social a:hover,
-  .sidebar-social a:focus {
-    text-decoration: none !important;
-  }
+}
+
+/* Hydejack's class-based dark mode */
+.dark-mode .content a strong, 
+.dark-mode .markdown-body a strong, 
+.dark-mode main a strong, 
+.dark-mode article a strong,
+[data-theme="dark"] .content a strong,
+[data-theme="dark"] .markdown-body a strong,
+[data-theme="dark"] main a strong,
+[data-theme="dark"] article a strong {
+  text-decoration: underline;
+  text-decoration-color: rgba(170, 170, 170, 0.5) !important;  /* pure neutral grey, no blue tones */
+  transition: text-decoration-color 0.2s ease;  /* smooth underline color transition */
+}
+
+.dark-mode .content a:hover strong, 
+.dark-mode .markdown-body a:hover strong, 
+.dark-mode main a:hover strong, 
+.dark-mode article a:hover strong,
+.dark-mode .content a:focus strong, 
+.dark-mode .markdown-body a:focus strong, 
+.dark-mode main a:focus strong, 
+.dark-mode article a:focus strong,
+[data-theme="dark"] .content a:hover strong,
+[data-theme="dark"] .markdown-body a:hover strong,
+[data-theme="dark"] main a:hover strong,
+[data-theme="dark"] article a:hover strong,
+[data-theme="dark"] .content a:focus strong,
+[data-theme="dark"] .markdown-body a:focus strong,
+[data-theme="dark"] main a:focus strong,
+[data-theme="dark"] article a:focus strong {
+  text-decoration-color: rgba(255, 255, 255, 0.9) !important;  /* bright white underline on hover */
 }
 
 /* keep external link icons subtle if enabled */
@@ -148,6 +161,41 @@ li {
 /* ------------------------------
    SIDEBAR STYLING
    ------------------------------ */
+
+/* Ensure sidebar navigation links have underlines */
+.sidebar-nav-item,
+.sidebar nav a,
+.sidebar .sidebar-nav a,
+#_menu a {
+  text-decoration: underline !important;
+}
+
+/* Remove underlines from ALL social/email icon links in sidebar */
+.sidebar .author__urls a,
+.sidebar a[class^="icon-"],
+.sidebar a[href^="mailto:"],
+.sidebar .social-icons a,
+a.icon-mail,
+a.icon-envelop,
+span[class^="icon-"] a,
+.list-social a {
+  text-decoration: none !important;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+/* Make social/email icons fully opaque on hover */
+.sidebar .author__urls a:hover,
+.sidebar a[class^="icon-"]:hover,
+.sidebar a[href^="mailto:"]:hover,
+.sidebar .social-icons a:hover,
+a.icon-mail:hover,
+a.icon-envelop:hover,
+span[class^="icon-"] a:hover,
+.list-social a:hover {
+  opacity: 1;
+}
+
 .sidebar-nav-item {
   font-size: 1.3em !important;
 }
