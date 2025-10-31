@@ -16,7 +16,7 @@ I study the recovery of the Roman economy following the papacy's sojourn in Fran
 </small>
 </details>
 - _Awards:_ [Georges Gallais-Hamonno Prize in Historical Finance](https://www.linkedin.com/pulse/research-prize-historical-finance-honoring-memory-georges-diebolt-iiuwf/?trackingId=f73LogxVR%2FuLVKJgIuCt4A%3D%3D){:target="_blank"}{:.no-mark-external}; [Frank D. Lewis Memorial Prize](https://www.hec.edu/en/doctoral-program/news/finance-phd-student-alyssa-rusonik-s-paper-renaissance-economic-recovery-receives-award){:target="_blank"}{:.no-mark-external}; Arthur Hosios Award.
-- _Media coverage:_ [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external}
+<!-- - _Media coverage:_ [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external} -->
 
 [**"Population Ethics: A Position-Based Axiomatic Approach"**](/assets/pdf/rusonik_gilboa_population_ethics.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external}
 <details>
