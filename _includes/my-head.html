@@ -46,13 +46,33 @@
   .loaded .sidebar::after {
     opacity: 1 !important;
   }
+  
+  /* Remove bullets from sidebar navigation */
+  .sidebar ul,
+  .sidebar .sidebar-nav,
+  .sidebar-nav,
+  #_menu {
+    list-style: none !important;
+    padding-left: 0 !important;
+  }
+  
+  .sidebar ul li::before,
+  .sidebar .sidebar-nav li::before,
+  .sidebar-nav li::before,
+  #_menu li::before {
+    content: none !important;
+    display: none !important;
+  }
 </style>
 
 <script>
-  // Add 'loaded' class once DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    document.documentElement.classList.add('loaded');
-  });
+  // Start fade-in immediately, don't wait for full DOM load
+  (function() {
+    // Trigger as soon as this script runs (which is in <head>)
+    setTimeout(function() {
+      document.documentElement.classList.add('loaded');
+    }, 50); // Minimal delay just to ensure CSS is parsed
+  })();
 </script>
 
 <script type="application/ld+json">
