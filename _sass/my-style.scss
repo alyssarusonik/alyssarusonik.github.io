@@ -90,10 +90,13 @@ li {
   color: inherit;                       /* keep default color for visited */
 }
 
-/* Exclude sidebar links from underline styling - let theme handle them */
-.sidebar a,
-.sidebar a:hover,
-.sidebar a:focus {
+/* Remove underlines from sidebar social/email icons specifically */
+.sidebar .social a,
+.sidebar .social a:hover,
+.sidebar .social a:focus,
+.sidebar-social a,
+.sidebar-social a:hover,
+.sidebar-social a:focus {
   text-decoration: none !important;
 }
 
@@ -120,10 +123,13 @@ li {
     color: inherit;                     /* keep default color for visited */
   }
   
-  /* Exclude sidebar links from underline styling in dark mode too */
-  .sidebar a,
-  .sidebar a:hover,
-  .sidebar a:focus {
+  /* Remove underlines from sidebar social/email icons in dark mode too */
+  .sidebar .social a,
+  .sidebar .social a:hover,
+  .sidebar .social a:focus,
+  .sidebar-social a,
+  .sidebar-social a:hover,
+  .sidebar-social a:focus {
     text-decoration: none !important;
   }
 }
