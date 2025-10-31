@@ -160,50 +160,19 @@ li {
   font-size: 1.5em !important;
 }
 
-/* ------------------------------
-   SIDEBAR FIX - Hide sliver when drawer is closed on smaller screens
-   ------------------------------ */
-@media screen and (max-width: 1199px) {
-  /* Prevent sidebar sliver from showing */
-  body:not(.drawer-opened) {
-    overflow-x: hidden;
-  }
-  
-  /* Push drawer further off-screen when closed to hide sliver */
-  #_drawer:not(.opened) {
-    margin-left: -5px;
-  }
-  
-  /* Alternative approach: ensure no part of sidebar is visible when closed */
-  .sidebar-sticky,
-  .sidebar-bg {
-    left: -1px;
-  }
-  
-  /* When drawer is opened, reset positions */
-  #_drawer.opened .sidebar-sticky,
-  #_drawer.opened .sidebar-bg,
-  body.drawer-opened .sidebar-sticky,
-  body.drawer-opened .sidebar-bg {
-    left: 0;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  body .sidebar {
-    position: relative;  /* Make sure sidebar can handle absolute positioning */
-  }
   body .sidebar::after {
     content: "J.M.W. Turner, \"Venice, The Mouth of the Grand Canal\", c.1840";
     display: block;
-    position: absolute;
+    position: fixed;  /* Use fixed positioning instead of absolute */
     bottom: 1rem;
-    right: 2rem;
+    left: 1rem;  /* Position from left edge of sidebar */
     font-size: 0.7em;
     color: rgba(255, 255, 255, 0.75);
     font-style: italic;
-    white-space: nowrap;  /* Keep caption on one line */
-    z-index: 100;  /* Increased to ensure visibility */
-    pointer-events: none;  /* Ensure it doesn't interfere with clicks */
+    white-space: nowrap;
+    z-index: 100;
+    pointer-events: none;
+    max-width: 20rem;  /* Constrain to sidebar width */
   }
 }
