@@ -160,11 +160,9 @@ li {
   font-size: 1.5em !important;
 }
 
-/* Fix sidebar sliver on mobile/narrow screens */
-@media screen and (max-width: 1199px) {
-  body:not(.drawer--opened) {
-    overflow-x: hidden;
-  }
+/* Fix sidebar sliver - hide any horizontal overflow */
+body:not(.drawer--opened) {
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 1200px) {
