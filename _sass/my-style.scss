@@ -36,19 +36,29 @@ li {
 }
 
 /* ------------------------------
-   CLEAN DASH LIST STYLE
+   CLEAN DASH LIST STYLE (content area only, not sidebar)
    ------------------------------ */
-ul {
+.content ul, .markdown-body ul, main ul, article ul {
   list-style: none;          /* remove default bullets */
   padding-left: 1.25em;      /* align neatly with text */
 }
 
-ul li::before {
+.content ul li::before, .markdown-body ul li::before, main ul li::before, article ul li::before {
   content: "–";              /* use en dash instead of bullet */
   color: #888;               /* subtle gray dash */
   margin-right: 0.5em;
   position: relative;
   left: -0.5em;              /* align dash visually */
+}
+
+/* Remove any list styling from sidebar navigation */
+.sidebar ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.sidebar ul li::before {
+  content: none !important;
 }
 
 /* ------------------------------
