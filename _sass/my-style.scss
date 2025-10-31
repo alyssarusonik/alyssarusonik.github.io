@@ -160,34 +160,25 @@ li {
   font-size: 1.5em !important;
 }
 
-/* Fix sidebar sliver - hide any horizontal overflow */
-body, html {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
-}
+/* Fix sidebar sliver - prevent horizontal scroll completely */
+/* The sliver appears when page content is wider than viewport, 
+   causing horizontal scrolling that reveals the sidebar edge */
 
-/* Prevent horizontal scrolling on all major containers */
-#_yPushState, #_drawer, .page, .content {
-  overflow-x: hidden;
+html, body {
+  overflow-x: hidden !important;
   max-width: 100%;
 }
 
-/* Ensure the sidebar doesn't cause overflow */
-.sidebar {
-  overflow-x: hidden;
+/* Prevent all main containers from being wider than viewport */
+#_yPushState, #_drawer, .page, .content, #_main, main {
+  overflow-x: hidden !important;
+  max-width: 100%;
 }
 
-/* Fix for mobile - ensure drawer doesn't cause horizontal scroll */
-@media screen and (max-width: 1199px) {
-  body {
-    overflow-x: hidden;
-    position: relative;
-  }
-  
-  .page {
-    overflow-x: hidden;
-  }
+/* Catch any pseudo-elements that might extend beyond bounds */
+body::before,
+body::after {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
