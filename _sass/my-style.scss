@@ -77,22 +77,24 @@ li {
 .content a strong, .markdown-body a strong, main a strong, article a strong {
   text-decoration: underline;
   text-decoration-color: rgba(70, 105, 130, 0.35);  /* faded Turner blue for subtle underline */
+  transition: text-decoration-color 0.2s ease;  /* smooth underline color transition */
 }
 
-.content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
-.content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
-  color: rgb(70, 105, 130) !important;  /* more vibrant Turner blue-grey on hover */
-  text-decoration: underline;
-}
-
-/* More vibrant underline on hover for paper titles */
+/* On hover, only change underline color for paper titles - keep text black */
 .content a:hover strong, .markdown-body a:hover strong, main a:hover strong, article a:hover strong,
 .content a:focus strong, .markdown-body a:focus strong, main a:focus strong, article a:focus strong {
-  text-decoration-color: rgb(70, 105, 130);
+  text-decoration-color: rgb(70, 105, 130);  /* vibrant Turner blue underline on hover */
 }
 
 .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
   color: inherit;                       /* keep default color for visited */
+}
+
+/* Exclude sidebar links from underline styling - let theme handle them */
+.sidebar a,
+.sidebar a:hover,
+.sidebar a:focus {
+  text-decoration: none !important;
 }
 
 /* Dark mode link colors - lighter tones for better contrast */
@@ -104,23 +106,25 @@ li {
   /* Always underline paper titles (bold links) in dark mode too */
   .content a strong, .markdown-body a strong, main a strong, article a strong {
     text-decoration: underline;
-    text-decoration-color: rgba(180, 180, 180, 0.4);  /* neutral light grey, no blue */
+    text-decoration-color: rgba(170, 170, 170, 0.5) !important;  /* pure neutral grey, no blue tones */
+    transition: text-decoration-color 0.2s ease;  /* smooth underline color transition */
   }
 
-  .content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
-  .content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
-    color: rgb(210, 225, 235) !important; /* very light blue-grey for excellent legibility on dark background */
-    text-decoration: underline;
-  }
-
-  /* More vibrant underline on hover for paper titles in dark mode */
+  /* On hover, only change underline color to white - keep text white */
   .content a:hover strong, .markdown-body a:hover strong, main a:hover strong, article a:hover strong,
   .content a:focus strong, .markdown-body a:focus strong, main a:focus strong, article a:focus strong {
-    text-decoration-color: rgb(210, 225, 235);
+    text-decoration-color: rgba(255, 255, 255, 0.9) !important;  /* bright white underline on hover */
   }
 
   .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
     color: inherit;                     /* keep default color for visited */
+  }
+  
+  /* Exclude sidebar links from underline styling in dark mode too */
+  .sidebar a,
+  .sidebar a:hover,
+  .sidebar a:focus {
+    text-decoration: none !important;
   }
 }
 
