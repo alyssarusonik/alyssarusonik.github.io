@@ -29,7 +29,7 @@ forward:               Forward
 back:                  Back
 permalink:             Permalink
 permalink_icon:        'content-hash'
-templates:             Templates (for web app)
+templates:             Templates
 present:               present
 toc:                   Table of Contents
 note:                  Note
@@ -37,8 +37,8 @@ description:           Description
 search:                Search
 search_placeholder:    Type something…
 
-loading:               Loading…
-redirecting:           Redirecting…
+loading:               Loading...
+redirecting:           Redirecting...
 
 continue_reading:      >
   Continue reading <!--post_title-->
@@ -65,7 +65,7 @@ offline:
 error:
   title:               Error
   message:             |
-    Sorry, an error occurred while loading <!--link-->.
+    An error occurred while loading <!--link-->.
 
 # Separators
 # ---------------------------------------------------------------------------------------

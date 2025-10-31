@@ -24,6 +24,35 @@
 <meta property="og:image" content="https://alyssarusonik.github.io/assets/img/favicon_io/android-chrome-512x512.png">
 <meta property="og:url" content="https://alyssarusonik.github.io">
 
+<!-- Critical CSS to prevent FOUC (Flash of Unstyled Content) -->
+<style>
+  /* Hide entire sidebar initially to prevent flash during load */
+  .sidebar {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in;
+  }
+  /* Show sidebar once page is fully loaded */
+  .loaded .sidebar {
+    opacity: 1 !important;
+  }
+  /* Also hide sidebar caption initially */
+  .sidebar::after {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in 0.1s;
+  }
+  /* Show caption with slight delay after sidebar appears */
+  .loaded .sidebar::after {
+    opacity: 1 !important;
+  }
+</style>
+
+<script>
+  // Add 'loaded' class once DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.classList.add('loaded');
+  });
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
