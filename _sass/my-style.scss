@@ -103,10 +103,10 @@ li {
     transition: text-decoration-color 0.2s ease;  /* smooth underline color transition */
   }
 
-  /* On hover, only change underline color to white - keep text white */
+  /* On hover, underline color matches text color */
   .content a:hover strong, .markdown-body a:hover strong, main a:hover strong, article a:hover strong,
   .content a:focus strong, .markdown-body a:focus strong, main a:focus strong, article a:focus strong {
-    text-decoration-color: rgba(255, 255, 255, 0.9) !important;  /* bright white underline on hover */
+    text-decoration-color: inherit !important;  /* match text color */
   }
 
   .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
@@ -144,7 +144,7 @@ li {
 [data-theme="dark"] .markdown-body a:focus strong,
 [data-theme="dark"] main a:focus strong,
 [data-theme="dark"] article a:focus strong {
-  text-decoration-color: rgba(255, 255, 255, 0.9) !important;  /* bright white underline on hover */
+  text-decoration-color: inherit !important;  /* match text color */
 }
 
 /* keep external link icons subtle if enabled */
@@ -161,38 +161,6 @@ li {
 /* ------------------------------
    SIDEBAR STYLING
    ------------------------------ */
-
-/* Remove underlines from ALL social/email icon links in sidebar */
-.sidebar .author__urls a,
-.sidebar a[class^="icon-"],
-.sidebar a[href^="mailto:"],
-.sidebar .social-icons a,
-.sidebar-social a,
-.sidebar-social a[href^="mailto:"],
-a.icon-mail,
-a.icon-envelop,
-a.no-mark-external[href^="mailto:"],
-span[class^="icon-"] a,
-.list-social a {
-  text-decoration: none !important;
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
-}
-
-/* Make social/email icons fully opaque on hover */
-.sidebar .author__urls a:hover,
-.sidebar a[class^="icon-"]:hover,
-.sidebar a[href^="mailto:"]:hover,
-.sidebar .social-icons a:hover,
-.sidebar-social a:hover,
-.sidebar-social a[href^="mailto:"]:hover,
-a.icon-mail:hover,
-a.icon-envelop:hover,
-a.no-mark-external[href^="mailto:"]:hover,
-span[class^="icon-"] a:hover,
-.list-social a:hover {
-  opacity: 1;
-}
 
 .sidebar-nav-item {
   font-size: 1.3em !important;
