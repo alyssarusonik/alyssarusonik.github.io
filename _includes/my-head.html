@@ -26,21 +26,21 @@
 
 <!-- Critical CSS to prevent FOUC (Flash of Unstyled Content) -->
 <style>
-  /* Hide entire sidebar initially to prevent flash during load */
-  .sidebar {
+  /* Hide sidebar text content initially, but keep background image visible */
+  .sidebar > * {
     opacity: 0 !important;
-    transition: opacity 0.4s ease-in;
+    transition: opacity 0.2s ease-in;
   }
-  /* Show sidebar once page is fully loaded */
-  .loaded .sidebar {
+  /* Show sidebar content once page is fully loaded */
+  .loaded .sidebar > * {
     opacity: 1 !important;
   }
   /* Also hide sidebar caption initially */
   .sidebar::after {
     opacity: 0 !important;
-    transition: opacity 0.4s ease-in 0.1s;
+    transition: opacity 0.2s ease-in;
   }
-  /* Show caption with slight delay after sidebar appears */
+  /* Show caption when loaded */
   .loaded .sidebar::after {
     opacity: 1 !important;
   }
