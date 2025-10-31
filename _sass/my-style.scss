@@ -73,10 +73,22 @@ li {
   transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
+/* Always underline paper titles (bold links) in research section */
+.content a strong, .markdown-body a strong, main a strong, article a strong {
+  text-decoration: underline;
+  text-decoration-color: rgba(70, 105, 130, 0.35);  /* faded Turner blue for subtle underline */
+}
+
 .content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
 .content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
-  color: rgb(85, 110, 125) !important;  /* blue-grey from Turner's water on hover */
+  color: rgb(70, 105, 130) !important;  /* more vibrant Turner blue-grey on hover */
   text-decoration: underline;
+}
+
+/* More vibrant underline on hover for paper titles */
+.content a:hover strong, .markdown-body a:hover strong, main a:hover strong, article a:hover strong,
+.content a:focus strong, .markdown-body a:focus strong, main a:focus strong, article a:focus strong {
+  text-decoration-color: rgb(70, 105, 130);
 }
 
 .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
@@ -89,10 +101,22 @@ li {
     color: inherit;                     /* use default white text color */
   }
 
+  /* Always underline paper titles (bold links) in dark mode too */
+  .content a strong, .markdown-body a strong, main a strong, article a strong {
+    text-decoration: underline;
+    text-decoration-color: rgba(190, 210, 225, 0.4);  /* faded lighter Turner blue for dark mode */
+  }
+
   .content a:hover, .markdown-body a:hover, main a:hover, article a:hover,
   .content a:focus, .markdown-body a:focus, main a:focus, article a:focus {
-    color: rgb(176, 190, 197) !important; /* lighter blue-grey on hover (matches accent_color) */
+    color: rgb(190, 210, 225) !important; /* much lighter blue-grey for better legibility on dark background */
     text-decoration: underline;
+  }
+
+  /* More vibrant underline on hover for paper titles in dark mode */
+  .content a:hover strong, .markdown-body a:hover strong, main a:hover strong, article a:hover strong,
+  .content a:focus strong, .markdown-body a:focus strong, main a:focus strong, article a:focus strong {
+    text-decoration-color: rgb(190, 210, 225);
   }
 
   .content a:visited, .markdown-body a:visited, main a:visited, article a:visited {
