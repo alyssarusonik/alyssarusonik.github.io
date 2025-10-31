@@ -162,21 +162,16 @@ li {
    SIDEBAR STYLING
    ------------------------------ */
 
-/* Ensure sidebar navigation links have underlines */
-.sidebar-nav-item,
-.sidebar nav a,
-.sidebar .sidebar-nav a,
-#_menu a {
-  text-decoration: underline !important;
-}
-
 /* Remove underlines from ALL social/email icon links in sidebar */
 .sidebar .author__urls a,
 .sidebar a[class^="icon-"],
 .sidebar a[href^="mailto:"],
 .sidebar .social-icons a,
+.sidebar-social a,
+.sidebar-social a[href^="mailto:"],
 a.icon-mail,
 a.icon-envelop,
+a.no-mark-external[href^="mailto:"],
 span[class^="icon-"] a,
 .list-social a {
   text-decoration: none !important;
@@ -189,8 +184,11 @@ span[class^="icon-"] a,
 .sidebar a[class^="icon-"]:hover,
 .sidebar a[href^="mailto:"]:hover,
 .sidebar .social-icons a:hover,
+.sidebar-social a:hover,
+.sidebar-social a[href^="mailto:"]:hover,
 a.icon-mail:hover,
 a.icon-envelop:hover,
+a.no-mark-external[href^="mailto:"]:hover,
 span[class^="icon-"] a:hover,
 .list-social a:hover {
   opacity: 1;
