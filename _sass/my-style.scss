@@ -248,3 +248,14 @@ li {
 /* (Use Hydejack default open-state transforms) */
 
 /* Remove desktop drawer hiding: keep overlay available at all widths */
+
+/* Mobile: hide sidebar text when drawer is closed (allow image sliver only) */
+@media screen and (max-width: 899px) {
+  hy-drawer:not([open]) .sidebar > * {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  hy-drawer[open] .sidebar > * {
+    opacity: 1 !important;
+  }
+}
