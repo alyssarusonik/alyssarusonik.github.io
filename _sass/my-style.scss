@@ -143,21 +143,19 @@ li {
    SIDEBAR STYLING
    ------------------------------ */
    
-.sidebar-nav-item {
-  font-size: 1.3em !important;
-}
-
-.sidebar-title {
-  font-size: 1.5em !important;
-}
+  //  .sidebar-nav-item {
+  //   font-size: 1.3em !important;
+  // }
+  
+  // .sidebar-title {
+  //   font-size: 1.5em !important;
+  // }
+   /* (Remove custom sidebar font sizing; use Hydejack defaults) */
 
 
 /* Revert custom sidebar styling to Hydejack defaults */
 
-/* Prevent horizontal overflow from dynamic page container */
-#_pushState {
-  overflow-x: hidden !important;
-}
+/* (Remove overflow override on pushState container) */
 
  
 
