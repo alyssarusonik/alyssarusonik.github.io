@@ -171,7 +171,7 @@ li {
 
 /* Cover potential subpixel seam between sidebar and content */
 /* Apply seam cover only on large/desktop layouts where sidebar is static */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .sidebar {
     margin-right: -2px;
   }
@@ -241,7 +241,7 @@ html, body {
    MOBILE DRAWER SLIVER FIX
    Use component variable to eliminate reveal without breaking toggle
    ------------------------------ */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 899px) {
   hy-drawer {
     --hy-drawer-reveal: 0px !important;
     --drawer-reveal: 0px !important;
@@ -274,36 +274,21 @@ hy-drawer:not([open])::part(panel) {
   border-right: 0 !important;
 }
 
-/* Apply off-screen transform ONLY on mobile/tablet */
-@media screen and (max-width: 1199px) {
-  hy-drawer:not([open])::part(panel) {
-    transform: translate3d(calc(-100% - 12px), 0, 0) !important;
-  }
-  hy-drawer[open]::part(panel) {
-    transform: none !important;
-  }
-  /* Legacy drawer host fallback (if present) */
-  #_drawer:not([open]) {
-    transform: translate3d(calc(-100% - 12px), 0, 0) !important;
-  }
-  #_drawer[open] {
-    transform: none !important;
-  }
-}
-
 /* On desktop, never move the panel off-screen */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   hy-drawer::part(panel) {
     transform: none !important;
   }
 }
 
-/* Make the drawer cover the entire viewport when open, regardless of size */
-hy-drawer::part(panel) {
-  width: 100vw !important;
-  max-width: 100vw !important;
-  height: 100vh !important;
-  max-height: 100vh !important;
+/* Make the drawer cover the entire viewport only on mobile/tablet */
+@media screen and (max-width: 899px) {
+  hy-drawer[open]::part(panel) {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
 }
 
 /* Ensure the drawer overlays content */
@@ -328,4 +313,32 @@ hy-drawer:not([open]) .sidebar {
 #_menu {
   max-width: 100% !important;
   overflow: hidden !important;
+}
+
+/* Move drawer off-screen when closed (host + panel) on mobile/tablet */
+@media screen and (max-width: 899px) {
+  hy-drawer:not([open]) {
+    transform: translate3d(calc(-100% - 12px), 0, 0) !important;
+  }
+  hy-drawer:not([open])::part(panel) {
+    transform: translate3d(calc(-100% - 12px), 0, 0) !important;
+  }
+  /* Legacy drawer host fallback (if present) */
+  #_drawer:not([open]) {
+    transform: translate3d(calc(-100% - 12px), 0, 0) !important;
+  }
+}
+
+/* When open, force into view across states/classes */
+hy-drawer[open],
+html.hy-drawer-open hy-drawer,
+body.hy-drawer-open hy-drawer,
+html.drawer-open #_drawer,
+body.drawer-open #_drawer,
+html.sidebar-open #_drawer,
+body.sidebar-open #_drawer {
+  transform: none !important;
+}
+hy-drawer[open]::part(panel) {
+  transform: none !important;
 }
