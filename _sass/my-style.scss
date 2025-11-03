@@ -169,6 +169,21 @@ li {
   overflow-x: hidden;
 }
 
+/* Remove custom list dash from breadcrumbs */
+.breadcrumbs li::before {
+  content: none !important;
+}
+
+/* Ensure breadcrumbs aren't indented by list padding overrides */
+.breadcrumbs {
+  padding-left: 0 !important;
+}
+
+/* As a safety net, prevent any page-level horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
 
 /* Caption commented out to prevent sliver issue */
 /*
