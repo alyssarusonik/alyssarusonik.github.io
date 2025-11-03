@@ -38,14 +38,12 @@
     opacity: 1 !important;
   }
   
-  /* Hide sidebar caption initially */
+  /* Hide sidebar caption completely to prevent sliver issue */
   .sidebar::after {
-    opacity: 0 !important;
-    transition: opacity 0.2s ease-out;
+    display: none !important;
   }
-  /* Show caption when loaded */
   .loaded .sidebar::after {
-    opacity: 1 !important;
+    display: none !important;
   }
   
   /* Remove bullets from sidebar navigation */
