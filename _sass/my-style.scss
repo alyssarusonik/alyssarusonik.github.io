@@ -298,6 +298,19 @@ hy-drawer:not([open])::part(panel) {
   }
 }
 
+/* Make the drawer cover the entire viewport when open, regardless of size */
+hy-drawer::part(panel) {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+}
+
+/* Ensure the drawer overlays content */
+hy-drawer {
+  z-index: 10000 !important;
+}
+
 /* If Hydejack applies borders/shadows inside the sidebar, suppress when closed */
 hy-drawer:not([open]) .sidebar {
   box-shadow: none !important;
