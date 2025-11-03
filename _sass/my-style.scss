@@ -272,6 +272,15 @@ body {
   --reveal: 0px !important;
 }
 
+/* Ensure reveal variables are applied at document root */
+:root,
+html,
+body {
+  --hy-drawer-reveal: 0px !important;
+  --drawer-reveal: 0px !important;
+  --reveal: 0px !important;
+}
+
 /* Avoid any visible edge when the drawer is closed */
 hy-drawer:not([open])::part(panel) {
   box-shadow: none !important;
