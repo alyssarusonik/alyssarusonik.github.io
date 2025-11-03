@@ -239,25 +239,33 @@ html, body {
    Hide the closed drawer's reveal on small screens only
    ------------------------------ */
 @media screen and (max-width: 1199px) {
-  /* Fully hide drawer when closed (remove sliver) */
+  /* Nudge closed drawer slightly left to eliminate 6–8px reveal (safer than -100%) */
   #_drawer:not([open]):not([aria-expanded="true"]):not(.is-open),
   hy-drawer:not([open]):not([aria-expanded="true"]):not(.is-open) {
-    transform: translate3d(-100%, 0, 0) !important;
+    transform: translate3d(-12px, 0, 0) !important;
     box-shadow: none !important;
   }
 
-  /* When open, ensure drawer is visible regardless of previous transform */
+  /* When open, ensure drawer is fully visible (cover common open states) */
   #_drawer[open],
   #_drawer[aria-expanded="true"],
   #_drawer.is-open,
   hy-drawer[open],
   hy-drawer[aria-expanded="true"],
-  hy-drawer.is-open {
+  hy-drawer.is-open,
+  html.drawer-open #_drawer,
+  body.drawer-open #_drawer,
+  html.hy-drawer-open #_drawer,
+  body.hy-drawer-open #_drawer,
+  html.sidebar-open #_drawer,
+  body.sidebar-open #_drawer {
     transform: none !important;
   }
 
+  /* Prefer moving the inner panel when supported */
+  hy-drawer:not([open])::part(panel) { transform: translate3d(-12px, 0, 0) !important; }
+  hy-drawer[open]::part(panel) { transform: none !important; }
+
   /* If hy-drawer uses a reveal custom property, zero it out */
-  :root {
-    --hy-drawer-reveal: 0px;
-  }
+  hy-drawer { --hy-drawer-reveal: 0px; --drawer-reveal: 0px; --reveal: 0px; }
 }
