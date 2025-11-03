@@ -38,11 +38,24 @@
     opacity: 1 !important;
   }
   
-  /* Hide sidebar text on narrow screens (<900px); background image stays visible */
+  /* Hide only text on narrow screens when drawer is closed (sliver).
+     Keep background image visible; show text again when drawer is open. */
   @media (max-width: 900px) {
-    .sidebar > * {
-      opacity: 0 !important;
-      pointer-events: none; /* prevent focusing invisible links */
+    /* Closed drawer: hide text */
+    hy-drawer:not([open]) .sidebar,
+    hy-drawer:not([open]) .sidebar * {
+      color: transparent !important;
+      text-decoration-color: transparent !important;
+    }
+    hy-drawer:not([open]) .sidebar a {
+      pointer-events: none;
+    }
+
+    /* Open drawer: ensure text is visible */
+    hy-drawer[open] .sidebar,
+    hy-drawer[open] .sidebar * {
+      color: inherit !important;
+      text-decoration-color: inherit !important;
     }
   }
   
