@@ -38,20 +38,15 @@
     opacity: 1 !important;
   }
   
-  /* Hide sidebar text only when viewport < 900px and drawer is CLOSED */
+  /* Hide sidebar text ONLY when viewport < 900px and drawer is CLOSED.
+     Use hy-drawer[opened] from the DOM screenshot to detect open state.
+     Only target .sidebar-sticky (keeps background image visible). */
   @media (max-width: 900px) {
-    /* default closed state: hide text, keep bg image */
-    .sidebar > * {
+    hy-drawer:not([opened]) .sidebar-sticky {
       opacity: 0 !important;
       pointer-events: none;
     }
-
-    /* open states: restore text */
-    hy-drawer[open] .sidebar > *,
-    #_drawer[open] .sidebar > *,
-    html.drawer-open .sidebar > *,
-    body.drawer-open .sidebar > *,
-    .drawer--open .sidebar > * {
+    hy-drawer[opened] .sidebar-sticky {
       opacity: 1 !important;
       pointer-events: auto;
     }
