@@ -239,13 +239,6 @@ html, body {
    Hide the closed drawer's reveal on small screens only
    ------------------------------ */
 @media screen and (max-width: 1199px) {
-  /* Ensure the drawer is fully off-screen when closed */
-  #_drawer:not([open]),
-  hy-drawer:not([open]) {
-    transform: translate3d(-100%, 0, 0) !important;
-    box-shadow: none !important;
-  }
-
   /* If hy-drawer uses a reveal custom property, zero it out */
   :root {
     --hy-drawer-reveal: 0px;
