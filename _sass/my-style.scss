@@ -249,13 +249,18 @@ li {
 
 /* Remove desktop drawer hiding: keep overlay available at all widths */
 
-/* Mobile: hide sidebar text when drawer is closed (allow image sliver only) */
+/* Mobile: hide only sidebar text when drawer is closed (allow image sliver) */
 @media screen and (max-width: 899px) {
-  hy-drawer:not([open]) .sidebar > * {
-    opacity: 0 !important;
-    pointer-events: none !important;
+  /* Hide textual content but keep media and background visible */
+  hy-drawer:not([open]) .sidebar :where(h1,h2,h3,h4,h5,h6,p,small,em,strong,a,li,ul,ol,nav,span) {
+    color: transparent !important;
+    text-shadow: none !important;
   }
-  hy-drawer[open] .sidebar > * {
-    opacity: 1 !important;
+  hy-drawer:not([open]) .sidebar :where(.sidebar-nav,#_menu,.sidebar-title) {
+    visibility: hidden !important;
+  }
+  hy-drawer:not([open]) .sidebar *::before,
+  hy-drawer:not([open]) .sidebar *::after {
+    content: none !important;
   }
 }
