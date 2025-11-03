@@ -48,7 +48,6 @@ li {
   color: #888;               /* subtle gray dash */
   margin-right: 0.5em;
   position: relative;
-  left: -0.5em;              /* align dash visually */
 }
 
 /* Remove any list styling from sidebar navigation */
@@ -165,26 +164,6 @@ li {
   text-align: center !important;
 }
 
-/* Fix sidebar sliver - prevent horizontal scroll completely */
-/* The sliver appears when page content is wider than viewport, 
-   causing horizontal scrolling that reveals the sidebar edge */
-
-html, body {
-  overflow-x: hidden !important;
-  max-width: 100%;
-}
-
-/* Prevent all main containers from being wider than viewport */
-#_yPushState, #_drawer, .page, .content, #_main, main {
-  overflow-x: hidden !important;
-  max-width: 100%;
-}
-
-/* Catch any pseudo-elements that might extend beyond bounds */
-body::before,
-body::after {
-  display: none;
-}
 
 /* Caption commented out to prevent sliver issue */
 /*
