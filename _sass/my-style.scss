@@ -272,13 +272,30 @@ body {
 hy-drawer:not([open])::part(panel) {
   box-shadow: none !important;
   border-right: 0 !important;
-  /* Move panel fully off-screen, plus extra to avoid any peek */
-  transform: translate3d(calc(-100% - 12px), 0, 0) !important;
 }
 
-/* Ensure transform resets when open */
-hy-drawer[open]::part(panel) {
-  transform: none !important;
+/* Apply off-screen transform ONLY on mobile/tablet */
+@media screen and (max-width: 1199px) {
+  hy-drawer:not([open])::part(panel) {
+    transform: translate3d(calc(-100% - 12px), 0, 0) !important;
+  }
+  hy-drawer[open]::part(panel) {
+    transform: none !important;
+  }
+  /* Legacy drawer host fallback (if present) */
+  #_drawer:not([open]) {
+    transform: translate3d(calc(-100% - 12px), 0, 0) !important;
+  }
+  #_drawer[open] {
+    transform: none !important;
+  }
+}
+
+/* On desktop, never move the panel off-screen */
+@media screen and (min-width: 1200px) {
+  hy-drawer::part(panel) {
+    transform: none !important;
+  }
 }
 
 /* If Hydejack applies borders/shadows inside the sidebar, suppress when closed */
@@ -287,14 +304,7 @@ hy-drawer:not([open]) .sidebar {
   border: 0 !important;
 }
 
-/* Legacy drawer host fallback (if present) */
-#_drawer:not([open]) {
-  transform: translate3d(calc(-100% - 12px), 0, 0) !important;
-}
-
-#_drawer[open] {
-  transform: none !important;
-}
+/* (moved above into mobile-only block) */
 
 /* Ensure no wide content inside the sidebar causes overflow */
 .sidebar img,
