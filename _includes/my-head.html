@@ -38,26 +38,27 @@
     opacity: 1 !important;
   }
   
-  /* Hide only text on narrow screens when drawer is closed (sliver).
-     Keep background image visible; show text again when drawer is open. */
+  /* Hide sidebar text only when viewport < 900px and drawer is CLOSED */
   @media (max-width: 900px) {
-    /* Closed drawer: hide text */
-    hy-drawer:not([open]) .sidebar,
-    hy-drawer:not([open]) .sidebar * {
-      color: transparent !important;
-      text-decoration-color: transparent !important;
-    }
-    hy-drawer:not([open]) .sidebar a {
+    /* default closed state: hide text, keep bg image */
+    .sidebar > * {
+      opacity: 0 !important;
       pointer-events: none;
     }
 
-    /* Open drawer: ensure text is visible */
-    hy-drawer[open] .sidebar,
-    hy-drawer[open] .sidebar * {
-      color: inherit !important;
-      text-decoration-color: inherit !important;
+    /* open states: restore text */
+    hy-drawer[open] .sidebar > *,
+    #_drawer[open] .sidebar > *,
+    html.drawer-open .sidebar > *,
+    body.drawer-open .sidebar > *,
+    .drawer--open .sidebar > * {
+      opacity: 1 !important;
+      pointer-events: auto;
     }
   }
+  
+  /* Small-screen sliver text hide will be re-added once we know the exact
+     open/closed state selector from the theme (class/attribute). */
   
   /* Caption animations commented out to prevent sliver issue */
   /*
