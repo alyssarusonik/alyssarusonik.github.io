@@ -32,17 +32,20 @@
   /* Sidebar background image appears immediately - hide only text container */
   .sidebar .sidebar-sticky {
     opacity: 0 !important;
+    pointer-events: none;
     transition: opacity 0.2s ease-out !important;
   }
   /* Fade in sidebar text only when it should be visible */
   @media (min-width: 900px) {
     .loaded .sidebar .sidebar-sticky {
       opacity: 1 !important;
+      pointer-events: auto;
     }
   }
   @media (max-width: 900px) {
     .loaded hy-drawer[opened] .sidebar .sidebar-sticky {
       opacity: 1 !important;
+      pointer-events: auto;
     }
   }
   
