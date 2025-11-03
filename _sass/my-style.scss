@@ -245,3 +245,36 @@ html, body {
     --reveal: 0px !important;
   }
 }
+
+/* ------------------------------
+   ELIMINATE DRAWER REVEAL GLOBALLY
+   ------------------------------ */
+hy-drawer,
+#_drawer {
+  --hy-drawer-reveal: 0px !important;
+  --drawer-reveal: 0px !important;
+  --reveal: 0px !important;
+}
+
+/* Avoid any visible edge when the drawer is closed */
+hy-drawer:not([open])::part(panel) {
+  box-shadow: none !important;
+  border-right: 0 !important;
+}
+
+/* If Hydejack applies borders/shadows inside the sidebar, suppress when closed */
+hy-drawer:not([open]) .sidebar {
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Ensure no wide content inside the sidebar causes overflow */
+.sidebar img,
+.sidebar svg,
+.sidebar video,
+.sidebar .sidebar-sticky,
+.sidebar .sidebar-nav,
+#_menu {
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
