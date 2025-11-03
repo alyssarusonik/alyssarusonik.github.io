@@ -200,6 +200,21 @@ html, body {
   overflow-x: hidden !important;
 }
 
+/* Ensure the drawer (closed state) is completely off-canvas without any visible sliver */
+@media screen and (max-width: 64em) {
+  hy-drawer#_drawer:not([open]),
+  #_drawer:not([open]) {
+    transform: translateX(calc(-100% - 3px)) !important;
+    left: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Avoid any sidebar shadows peeking through while closed */
+  #_drawer:not([open]) .sidebar {
+    box-shadow: none !important;
+  }
+}
+
 /* Remove underline from navbar (incl. hamburger icon link) */
 #_navbar a,
 #_navbar a:visited,
