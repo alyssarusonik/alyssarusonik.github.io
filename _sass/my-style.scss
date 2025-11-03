@@ -170,8 +170,11 @@ li {
 }
 
 /* Cover potential subpixel seam between sidebar and content */
-.sidebar {
-  margin-right: -2px;
+/* Apply seam cover only on large/desktop layouts where sidebar is static */
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    margin-right: -2px;
+  }
 }
 
 /* Prevent horizontal overflow from dynamic page container */
@@ -256,16 +259,41 @@ hy-drawer,
   --reveal: 0px !important;
 }
 
+/* Also define at root level to ensure custom properties cross Shadow DOM boundaries */
+:root,
+html,
+body {
+  --hy-drawer-reveal: 0px !important;
+  --drawer-reveal: 0px !important;
+  --reveal: 0px !important;
+}
+
 /* Avoid any visible edge when the drawer is closed */
 hy-drawer:not([open])::part(panel) {
   box-shadow: none !important;
   border-right: 0 !important;
+  /* Move panel fully off-screen, plus extra to avoid any peek */
+  transform: translate3d(calc(-100% - 12px), 0, 0) !important;
+}
+
+/* Ensure transform resets when open */
+hy-drawer[open]::part(panel) {
+  transform: none !important;
 }
 
 /* If Hydejack applies borders/shadows inside the sidebar, suppress when closed */
 hy-drawer:not([open]) .sidebar {
   box-shadow: none !important;
   border: 0 !important;
+}
+
+/* Legacy drawer host fallback (if present) */
+#_drawer:not([open]) {
+  transform: translate3d(calc(-100% - 12px), 0, 0) !important;
+}
+
+#_drawer[open] {
+  transform: none !important;
 }
 
 /* Ensure no wide content inside the sidebar causes overflow */
