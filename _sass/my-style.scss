@@ -160,54 +160,48 @@ li {
   font-size: 1.5em !important;
 }
 
+/* Ensure sidebar text is center-aligned */
+.sidebar, .sidebar-sticky, .sidebar-about {
+  text-align: center !important;
+}
+
 /* Fix sidebar sliver - prevent horizontal scroll completely */
 /* The sliver appears when page content is wider than viewport, 
    causing horizontal scrolling that reveals the sidebar edge */
 
 html, body {
   overflow-x: hidden !important;
-  max-width: 100vw !important;
-  width: 100% !important;
+  max-width: 100%;
 }
 
 /* Prevent all main containers from being wider than viewport */
-#_yPushState, #_drawer, .page, .content, #_main, main, .content-wrap {
+#_yPushState, #_drawer, .page, .content, #_main, main {
   overflow-x: hidden !important;
-  max-width: 100% !important;
-}
-
-/* Aggressively hide drawer when not opened */
-#_drawer:not(.opened) {
-  transform: translateX(-100%) !important;
-  visibility: hidden !important;
-}
-
-/* Ensure sidebar and all its elements stay contained */
-.sidebar, .sidebar-bg, .sidebar-sticky {
-  overflow-x: hidden !important;
-  max-width: 100% !important;
-}
-
-/* Prevent any sidebar elements from extending beyond bounds */
-.sidebar * {
-  max-width: 100% !important;
+  max-width: 100%;
 }
 
 /* Catch any pseudo-elements that might extend beyond bounds */
 body::before,
-body::after,
-.sidebar::before {
-  display: none !important;
+body::after {
+  display: none;
 }
 
-/* Completely hide the caption - it may be causing the sliver */
-.sidebar::after {
-  display: none !important;
-}
-
-/* On mobile, ensure drawer is completely off-screen when closed */
-@media (max-width: 1665px) {
-  #_drawer {
-    left: -100% !important;
+/* Caption commented out to prevent sliver issue */
+/*
+@media screen and (min-width: 1200px) {
+  body .sidebar::after {
+    content: "J.M.W. Turner, \"Venice, The Mouth of the Grand Canal\", c.1840";
+    display: block;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.75);
+    font-style: italic;
+    white-space: nowrap;
+    z-index: 100;
+    pointer-events: none;
+    max-width: 20rem;
   }
 }
+*/
