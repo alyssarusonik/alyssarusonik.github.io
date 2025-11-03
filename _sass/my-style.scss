@@ -169,9 +169,9 @@ li {
   overflow: hidden;
 }
 
-/* Cover potential 1px subpixel seam between sidebar and content */
+/* Cover potential subpixel seam between sidebar and content */
 .sidebar {
-  margin-right: -1px;
+  margin-right: -2px;
 }
 
 /* Prevent horizontal overflow from dynamic page container */
