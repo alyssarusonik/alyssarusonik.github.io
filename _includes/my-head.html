@@ -29,19 +29,26 @@
 
 <!-- Critical CSS to prevent FOUC (Flash of Unstyled Content) -->
 <style>
-  /* Sidebar background image appears immediately - only hide text content */
-  .sidebar > * {
+  /* Sidebar background image appears immediately - hide only text container */
+  .sidebar .sidebar-sticky {
     opacity: 0 !important;
     transition: opacity 0.2s ease-out !important;
   }
-  .loaded .sidebar > * {
-    opacity: 1 !important;
+  /* Fade in sidebar text only when it should be visible */
+  @media (min-width: 900px) {
+    .loaded .sidebar .sidebar-sticky {
+      opacity: 1 !important;
+    }
+  }
+  @media (max-width: 900px) {
+    .loaded hy-drawer[opened] .sidebar .sidebar-sticky {
+      opacity: 1 !important;
+    }
   }
   
-  /* Hide sidebar text ONLY when viewport < 900px and drawer is CLOSED.
-     Use hy-drawer[opened] from the DOM screenshot to detect open state.
-     Only target .sidebar-sticky (keeps background image visible). */
-  @media (max-width: 900px) {
+  /* Hide sidebar text only under 900px when drawer is CLOSED (sliver).
+     When the drawer is OPENED (full), show text even under 900px. */
+  /* @media (max-width: 900px) {
     hy-drawer:not([opened]) .sidebar-sticky {
       opacity: 0 !important;
       pointer-events: none;
@@ -50,7 +57,7 @@
       opacity: 1 !important;
       pointer-events: auto;
     }
-  }
+  } */
   
   /* Small-screen sliver text hide will be re-added once we know the exact
      open/closed state selector from the theme (class/attribute). */
