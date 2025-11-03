@@ -177,10 +177,10 @@ li {
   content: none !important;
 }
 
-/* As a safety net, prevent any page-level horizontal scroll */
-html, body {
-  overflow-x: hidden !important;
-}
+// /* As a safety net, prevent any page-level horizontal scroll */
+// html, body {
+//   overflow-x: hidden !important;
+// }
 
 /* Removed aggressive closed-drawer transform to keep mobile drawer opening normally */
 
