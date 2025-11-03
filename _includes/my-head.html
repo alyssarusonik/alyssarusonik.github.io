@@ -38,6 +38,14 @@
     opacity: 1 !important;
   }
   
+  /* Hide sidebar text on narrow screens (<900px); background image stays visible */
+  @media (max-width: 900px) {
+    .sidebar > * {
+      opacity: 0 !important;
+      pointer-events: none; /* prevent focusing invisible links */
+    }
+  }
+  
   /* Caption animations commented out to prevent sliver issue */
   /*
   .sidebar::after {
