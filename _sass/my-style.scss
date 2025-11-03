@@ -164,6 +164,11 @@ li {
   text-align: center !important;
 }
 
+/* Contain any wide pseudo-elements or content inside the sidebar */
+.sidebar {
+  overflow: hidden;
+}
+
 /* Prevent horizontal overflow from dynamic page container */
 #_pushState {
   overflow-x: hidden;
@@ -177,6 +182,12 @@ li {
 /* Ensure breadcrumbs aren't indented by list padding overrides */
 .breadcrumbs {
   padding-left: 0 !important;
+}
+
+/* Hard-disable any pseudo-element decorations inside breadcrumbs */
+.breadcrumbs *::before,
+.breadcrumbs *::after {
+  content: none !important;
 }
 
 /* As a safety net, prevent any page-level horizontal scroll */
