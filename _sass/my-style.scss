@@ -50,15 +50,7 @@ li {
   position: relative;
 }
 
-/* Remove any list styling from sidebar navigation */
-.sidebar ul {
-  list-style: none !important;
-  padding-left: 0 !important;
-}
-
-.sidebar ul li::before {
-  content: none !important;
-}
+/* Use Hydejack default sidebar navigation list styling */
 
 /* ------------------------------
    LINK STYLING (content area only, not sidebar)
@@ -150,7 +142,7 @@ li {
 /* ------------------------------
    SIDEBAR STYLING
    ------------------------------ */
-
+   
 .sidebar-nav-item {
   font-size: 1.3em !important;
 }
@@ -159,23 +151,8 @@ li {
   font-size: 1.5em !important;
 }
 
-/* Ensure sidebar text is center-aligned */
-.sidebar, .sidebar-sticky, .sidebar-about {
-  text-align: center !important;
-}
 
-/* Contain any wide pseudo-elements or content inside the sidebar */
-.sidebar {
-  overflow: hidden;
-}
-
-/* Cover potential subpixel seam between sidebar and content */
-/* Apply seam cover only on large/desktop layouts where sidebar is static */
-@media screen and (min-width: 900px) {
-  .sidebar {
-    margin-right: -2px;
-  }
-}
+/* Revert custom sidebar styling to Hydejack defaults */
 
 /* Prevent horizontal overflow from dynamic page container */
 #_pushState {
@@ -237,117 +214,39 @@ html, body {
 }
 */
 
-/* ------------------------------
-   MOBILE DRAWER SLIVER FIX
-   Use component variable to eliminate reveal without breaking toggle
-   ------------------------------ */
-@media screen and (max-width: 899px) {
-  hy-drawer {
-    --hy-drawer-reveal: 0px !important;
-    --drawer-reveal: 0px !important;
-    --reveal: 0px !important;
-    /* Encourage full-screen panel sizing via custom properties as well */
-    --hy-drawer-width: 100vw;
-    --drawer-width: 100vw;
-    --width: 100vw;
-  }
-}
+/* Drawer: use Hydejack defaults on mobile */
 
-/* ------------------------------
-   ELIMINATE DRAWER REVEAL GLOBALLY
-   ------------------------------ */
-hy-drawer,
-#_drawer {
-  --hy-drawer-reveal: 0px !important;
-  --drawer-reveal: 0px !important;
-  --reveal: 0px !important;
-}
+/* Drawer: rely on Hydejack default reveal behavior */
 
-/* Also define at root level to ensure custom properties cross Shadow DOM boundaries */
-:root,
-html,
-body {
-  --hy-drawer-reveal: 0px !important;
-  --drawer-reveal: 0px !important;
-  --reveal: 0px !important;
-}
+/* Removed custom drawer CSS variables block */
+// :root,
+// html,
+// body {
+//   /* removed custom drawer CSS variables */
+// }
 
-/* Ensure reveal variables are applied at document root */
-:root,
-html,
-body {
-  --hy-drawer-reveal: 0px !important;
-  --drawer-reveal: 0px !important;
-  --reveal: 0px !important;
-}
+/* removed duplicate drawer CSS variables at document root */
+// :root,
+// html,
+// body {
+//   /* removed duplicate drawer CSS variables */
+// }
 
-/* Avoid any visible edge when the drawer is closed */
-hy-drawer:not([open])::part(panel) {
-  box-shadow: none !important;
-  border-right: 0 !important;
-}
+/* (Use Hydejack defaults for drawer closed state and desktop behavior) */
 
-/* On desktop, never move the panel off-screen */
-@media screen and (min-width: 900px) {
-  hy-drawer::part(panel) {
-    transform: none !important;
-  }
-}
+/* (Use Hydejack default mobile drawer sizing) */
 
-/* Make the drawer cover the entire viewport only on mobile/tablet */
-@media screen and (max-width: 899px) {
-  hy-drawer[open]::part(panel) {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100vh !important;
-    max-height: 100vh !important;
-    left: 0 !important;
-    right: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-  }
-}
+/* (Use Hydejack default z-index for drawer) */
 
-/* Ensure the drawer overlays content */
-hy-drawer {
-  z-index: 10000 !important;
-}
-
-/* If Hydejack applies borders/shadows inside the sidebar, suppress when closed */
-hy-drawer:not([open]) .sidebar {
-  box-shadow: none !important;
-  border: 0 !important;
-}
+/* (Use Hydejack default sidebar appearance) */
 
 /* (moved above into mobile-only block) */
 
-/* Ensure no wide content inside the sidebar causes overflow */
-.sidebar img,
-.sidebar svg,
-.sidebar video,
-.sidebar .sidebar-sticky,
-.sidebar .sidebar-nav,
-#_menu {
-  max-width: 100% !important;
-  overflow: hidden !important;
-}
+/* (Rely on theme defaults for sidebar content sizing) */
 
 /* Move drawer off-screen when closed (host + panel) on mobile/tablet */
 /* Let Hydejack's defaults handle the closed state; rely on reveal:0 to prevent sliver */
 
-/* When open, force into view across states/classes */
-hy-drawer[open],
-html.hy-drawer-open hy-drawer,
-body.hy-drawer-open hy-drawer,
-html.drawer-open #_drawer,
-body.drawer-open #_drawer,
-html.sidebar-open #_drawer,
-body.sidebar-open #_drawer {
-  transform: none !important;
-}
-hy-drawer[open]::part(panel) {
-  transform: none !important;
-  pointer-events: auto !important;
-}
+/* (Use Hydejack default open-state transforms) */
 
 /* Remove desktop drawer hiding: keep overlay available at all widths */
