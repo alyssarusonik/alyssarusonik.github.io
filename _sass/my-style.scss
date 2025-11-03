@@ -164,6 +164,11 @@ li {
   text-align: center !important;
 }
 
+/* Prevent horizontal overflow from dynamic page container */
+#_pushState {
+  overflow-x: hidden;
+}
+
 
 /* Caption commented out to prevent sliver issue */
 /*
