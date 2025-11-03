@@ -169,6 +169,11 @@ li {
   overflow: hidden;
 }
 
+/* Cover potential 1px subpixel seam between sidebar and content */
+.sidebar {
+  margin-right: -1px;
+}
+
 /* Prevent horizontal overflow from dynamic page container */
 #_pushState {
   overflow-x: hidden !important;
@@ -193,6 +198,15 @@ li {
 /* As a safety net, prevent any page-level horizontal scroll */
 html, body {
   overflow-x: hidden !important;
+}
+
+/* Remove underline from navbar (incl. hamburger icon link) */
+#_navbar a,
+#_navbar a:visited,
+#_navbar a:hover,
+#_navbar a:focus {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
 }
 
 
