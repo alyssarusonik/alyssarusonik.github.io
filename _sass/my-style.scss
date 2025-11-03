@@ -239,6 +239,23 @@ html, body {
    Hide the closed drawer's reveal on small screens only
    ------------------------------ */
 @media screen and (max-width: 1199px) {
+  /* Fully hide drawer when closed (remove sliver) */
+  #_drawer:not([open]):not([aria-expanded="true"]):not(.is-open),
+  hy-drawer:not([open]):not([aria-expanded="true"]):not(.is-open) {
+    transform: translate3d(-100%, 0, 0) !important;
+    box-shadow: none !important;
+  }
+
+  /* When open, ensure drawer is visible regardless of previous transform */
+  #_drawer[open],
+  #_drawer[aria-expanded="true"],
+  #_drawer.is-open,
+  hy-drawer[open],
+  hy-drawer[aria-expanded="true"],
+  hy-drawer.is-open {
+    transform: none !important;
+  }
+
   /* If hy-drawer uses a reveal custom property, zero it out */
   :root {
     --hy-drawer-reveal: 0px;
