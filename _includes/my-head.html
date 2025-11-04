@@ -29,24 +29,16 @@
 
 <!-- Critical CSS to prevent FOUC (Flash of Unstyled Content) -->
 <style>
-  /* Sidebar background image appears immediately - hide only text container */
+  /* Sidebar text visible by default; hide only when drawer is closed on small screens */
   .sidebar .sidebar-sticky {
-    opacity: 0 !important;
-    pointer-events: none;
+    opacity: 1 !important;
+    pointer-events: auto;
     transition: opacity 0.2s ease-out !important;
   }
-  /* Fade in sidebar text only when it should be visible */
-  @media (min-width: 1024px) {
-    .loaded .sidebar .sidebar-sticky {
-      opacity: 1 !important;
-      pointer-events: auto;
-    }
-  }
   @media (max-width: 1023.98px) {
-    .loaded hy-drawer[opened] .sidebar .sidebar-sticky,
-    .loaded hy-drawer[open] .sidebar .sidebar-sticky {
-      opacity: 1 !important;
-      pointer-events: auto;
+    hy-drawer:not([open]):not([opened]):not(.is-open) .sidebar .sidebar-sticky {
+      opacity: 0 !important;
+      pointer-events: none;
     }
   }
   
@@ -63,8 +55,8 @@
     }
   } */
   
-  /* Small-screen sliver text hide will be re-added once we know the exact
-     open/closed state selector from the theme (class/attribute). */
+  /* Small-screen sliver text hide targets common closed states on hy-drawer
+     (no [open] or [opened] attribute and no .is-open class). */
   
   /* Caption animations commented out to prevent sliver issue */
   /*
