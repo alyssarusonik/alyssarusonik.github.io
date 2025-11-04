@@ -182,14 +182,7 @@ li {
 
 /* Removed aggressive closed-drawer transform to keep mobile drawer opening normally */
 
-/* Remove underline from navbar (incl. hamburger icon link) */
-#_navbar a,
-#_navbar a:visited,
-#_navbar a:hover,
-#_navbar a:focus {
-  text-decoration: none !important;
-  border-bottom: 0 !important;
-}
+/* Restore Hydejack defaults for navbar links (no custom resets) */
 
 
 /* Caption commented out to prevent sliver issue */
