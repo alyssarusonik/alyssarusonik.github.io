@@ -139,26 +139,6 @@ li {
   padding-bottom: 3rem;
 }
 
-/* ------------------------------
-   SIDEBAR STYLING
-   ------------------------------ */
-   
-  //  .sidebar-nav-item {
-  //   font-size: 1.3em !important;
-  // }
-  
-  // .sidebar-title {
-  //   font-size: 1.5em !important;
-  // }
-   /* (Remove custom sidebar font sizing; use Hydejack defaults) */
-
-
-/* Revert custom sidebar styling to Hydejack defaults */
-
-/* (Remove overflow override on pushState container) */
-
- 
-
 /* Remove custom list dash from breadcrumbs */
 .breadcrumbs li::before {
   content: none !important;
@@ -175,129 +155,6 @@ li {
   content: none !important;
 }
 
-// /* As a safety net, prevent any page-level horizontal scroll */
-// html, body {
-//   overflow-x: hidden !important;
-// }
-
-/* Removed aggressive closed-drawer transform to keep mobile drawer opening normally */
-
-// /* Remove underline from navbar (incl. hamburger icon link) */
-// #_navbar a,
-// #_navbar a:visited,
-// #_navbar a:hover,
-// #_navbar a:focus {
-//   text-decoration: none !important;
-//   border-bottom: 0 !important;
-// }
-
-
-/* Restore Hydejack defaults for navbar links (no custom resets) */
-
-/* Navbar hamburger (redundant; see global override below) */
-// #_navbar [aria-controls="_drawer"],
-// #_navbar a[href="#_drawer"] {
-//   text-decoration: none !important;
-//   border: 0 !important;
-//   border-bottom: 0 !important;
-//   font-weight: 400 !important;
-// }
-
-/* Navbar hamburger states (redundant; see global override below) */
-// #_navbar [aria-controls="_drawer"]:hover,
-// #_navbar [aria-controls="_drawer"]:focus,
-// #_navbar [aria-controls="_drawer"]:visited,
-// #_navbar a[href="#_drawer"]:hover,
-// #_navbar a[href="#_drawer"]:focus,
-// #_navbar a[href="#_drawer"]:visited {
-//   text-decoration: none !important;
-//   border: 0 !important;
-//   border-bottom: 0 !important;
-//   font-weight: 400 !important;
-// }
-
-/* Navbar hamburger nested elements (redundant; see global override below) */
-// #_navbar [aria-controls="_drawer"] *,
-// #_navbar a[href="#_drawer"] * {
-//   text-decoration: none !important;
-//   font-weight: inherit;
-// }
-
-/* Ensure hamburger trigger never looks like a link, anywhere (broader scope)
-   (Commented out as redundant with specific selectors below) */
-// a[aria-controls="_drawer"],
-// a[href="#_drawer"],
-// label[for="_drawer"],
-// button[aria-controls="_drawer"],
-// [aria-controls="_drawer"],
-// [href="#_drawer"],
-// [for="_drawer"],
-// #_navbar a[aria-controls="_drawer"],
-// #_navbar a[href="#_drawer"],
-// #_navbar label[for="_drawer"],
-// #_navbar button[aria-controls="_drawer"] {
-//   text-decoration: none !important;
-//   border: 0 !important;
-//   border-bottom: 0 !important;
-//   font-weight: 400 !important;
-// }
-
-/* States (commented out as redundant with specific selectors below) */
-// a[aria-controls="_drawer"]:hover,
-// a[aria-controls="_drawer"]:focus,
-// a[aria-controls="_drawer"]:visited,
-// a[href="#_drawer"]:hover,
-// a[href="#_drawer"]:focus,
-// a[href="#_drawer"]:visited,
-// label[for="_drawer"]:hover,
-// label[for="_drawer"]:focus,
-// label[for="_drawer"]:visited,
-// button[aria-controls="_drawer"]:hover,
-// button[aria-controls="_drawer"]:focus,
-// button[aria-controls="_drawer"]:visited,
-// [aria-controls="_drawer"]:hover,
-// [aria-controls="_drawer"]:focus,
-// [aria-controls="_drawer"]:visited,
-// [href="#_drawer"]:hover,
-// [href="#_drawer"]:focus,
-// [href="#_drawer"]:visited,
-// [for="_drawer"]:hover,
-// [for="_drawer"]:focus,
-// [for="_drawer"]:visited,
-// #_navbar a[aria-controls="_drawer"]:hover,
-// #_navbar a[aria-controls="_drawer"]:focus,
-// #_navbar a[aria-controls="_drawer"]:visited,
-// #_navbar a[href="#_drawer"]:hover,
-// #_navbar a[href="#_drawer"]:focus,
-// #_navbar a[href="#_drawer"]:visited,
-// #_navbar label[for="_drawer"]:hover,
-// #_navbar label[for="_drawer"]:focus,
-// #_navbar label[for="_drawer"]:visited,
-// #_navbar button[aria-controls="_drawer"]:hover,
-// #_navbar button[aria-controls="_drawer"]:focus,
-// #_navbar button[aria-controls="_drawer"]:visited {
-//   text-decoration: none !important;
-//   border: 0 !important;
-//   border-bottom: 0 !important;
-//   font-weight: 400 !important;
-// }
-
-/* Prevent nested elements from reintroducing styles (commented out as redundant) */
-// a[aria-controls="_drawer"] *,
-// a[href="#_drawer"] *,
-// label[for="_drawer"] *,
-// button[aria-controls="_drawer"] *,
-// [aria-controls="_drawer"] *,
-// [href="#_drawer"] *,
-// [for="_drawer"] *,
-// #_navbar a[aria-controls="_drawer"] *,
-// #_navbar a[href="#_drawer"] *,
-// #_navbar label[for="_drawer"] *,
-// #_navbar button[aria-controls="_drawer"] * {
-//   text-decoration: none !important;
-//   font-weight: inherit !important;
-// }
-
 /* Match actual hamburger markup: <a id="_menu" href="#_drawer--opened" class="nav-btn"> */
 #_navbar #_menu,
 #_menu,
@@ -307,6 +164,7 @@ a.nav-btn[href^="#_drawer"] {
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
+  color: inherit !important; /* ensure icon inherits navbar text color */
 }
 
 #_navbar #_menu:hover,
@@ -325,6 +183,7 @@ a.nav-btn[href^="#_drawer"]:visited {
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
+  color: inherit !important; /* keep color consistent across states */
 }
 
 #_navbar #_menu *,
@@ -335,61 +194,11 @@ a.nav-btn[href^="#_drawer"] * {
   font-weight: inherit !important;
 }
 
-
-/* Caption commented out to prevent sliver issue */
-/*
-@media screen and (min-width: 1200px) {
-  body .sidebar::after {
-    content: "J.M.W. Turner, \"Venice, The Mouth of the Grand Canal\", c.1840";
-    display: block;
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    font-size: 0.7em;
-    color: rgba(255, 255, 255, 0.75);
-    font-style: italic;
-    white-space: nowrap;
-    z-index: 100;
-    pointer-events: none;
-    max-width: 20rem;
-  }
+/* Ensure the three-line hamburger SVG uses the same color as the theme toggle */
+#_navbar #_menu svg,
+#_menu svg,
+#_navbar a.nav-btn[href^="#_drawer"] svg,
+a.nav-btn[href^="#_drawer"] svg {
+  stroke: currentColor !important;
 }
-*/
-
-/* Drawer: use Hydejack defaults on mobile */
-
-/* Drawer: rely on Hydejack default reveal behavior */
-
-/* Removed custom drawer CSS variables block */
-// :root,
-// html,
-// body {
-//   /* removed custom drawer CSS variables */
-// }
-
-/* removed duplicate drawer CSS variables at document root */
-// :root,
-// html,
-// body {
-//   /* removed duplicate drawer CSS variables */
-// }
-
-/* (Use Hydejack defaults for drawer closed state and desktop behavior) */
-
-/* (Use Hydejack default mobile drawer sizing) */
-
-/* (Use Hydejack default z-index for drawer) */
-
-/* (Use Hydejack default sidebar appearance) */
-
-/* (moved above into mobile-only block) */
-
-/* (Rely on theme defaults for sidebar content sizing) */
-
-/* Move drawer off-screen when closed (host + panel) on mobile/tablet */
-/* Let Hydejack's defaults handle the closed state; rely on reveal:0 to prevent sliver */
-
-/* (Use Hydejack default open-state transforms) */
-
-/* Remove desktop drawer hiding: keep overlay available at all widths */
 
