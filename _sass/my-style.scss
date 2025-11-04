@@ -96,6 +96,7 @@ li {
 }
 
 /* Hydejack's class-based dark mode */
+/*
 .root, :root {
   --ui-icon-color: rgba(0, 0, 0, 0.65);
 }
@@ -110,6 +111,7 @@ li {
 [data-theme="dark"] {
   --ui-icon-color: rgba(255, 255, 255, 0.8);
 }
+*/
 .dark-mode .content a, 
 .dark-mode .markdown-body a, 
 .dark-mode main a, 
@@ -178,7 +180,8 @@ a.nav-btn[href^="#_drawer"] {
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
-  color: var(--ui-icon-color) !important; /* unify with dark mode icon color */
+  /* color: var(--ui-icon-color) !important; */ /* unified icon color (commented out) */
+  color: inherit !important;
 }
 
 #_navbar #_menu:hover,
@@ -197,7 +200,8 @@ a.nav-btn[href^="#_drawer"]:visited {
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
-  color: var(--ui-icon-color) !important; /* keep color consistent across states */
+  /* color: var(--ui-icon-color) !important; */ /* unified icon color (commented out) */
+  color: inherit !important;
 }
 
 #_navbar #_menu *,
@@ -217,7 +221,9 @@ a.nav-btn[href^="#_drawer"] svg {
 }
 
 /* Also ensure all navbar SVG icons (incl. dark mode sun) use the same color */
+/*
 #_navbar svg {
   color: var(--ui-icon-color) !important;
 }
+*/
 
