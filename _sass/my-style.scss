@@ -223,41 +223,114 @@ li {
 //   font-weight: inherit;
 // }
 
-/* Ensure hamburger trigger never looks like a link, anywhere (broader scope) */
-a[aria-controls="_drawer"],
-a[href="#_drawer"],
-[aria-controls="_drawer"],
-[href="#_drawer"] {
+/* Ensure hamburger trigger never looks like a link, anywhere (broader scope)
+   (Commented out as redundant with specific selectors below) */
+// a[aria-controls="_drawer"],
+// a[href="#_drawer"],
+// label[for="_drawer"],
+// button[aria-controls="_drawer"],
+// [aria-controls="_drawer"],
+// [href="#_drawer"],
+// [for="_drawer"],
+// #_navbar a[aria-controls="_drawer"],
+// #_navbar a[href="#_drawer"],
+// #_navbar label[for="_drawer"],
+// #_navbar button[aria-controls="_drawer"] {
+//   text-decoration: none !important;
+//   border: 0 !important;
+//   border-bottom: 0 !important;
+//   font-weight: 400 !important;
+// }
+
+/* States (commented out as redundant with specific selectors below) */
+// a[aria-controls="_drawer"]:hover,
+// a[aria-controls="_drawer"]:focus,
+// a[aria-controls="_drawer"]:visited,
+// a[href="#_drawer"]:hover,
+// a[href="#_drawer"]:focus,
+// a[href="#_drawer"]:visited,
+// label[for="_drawer"]:hover,
+// label[for="_drawer"]:focus,
+// label[for="_drawer"]:visited,
+// button[aria-controls="_drawer"]:hover,
+// button[aria-controls="_drawer"]:focus,
+// button[aria-controls="_drawer"]:visited,
+// [aria-controls="_drawer"]:hover,
+// [aria-controls="_drawer"]:focus,
+// [aria-controls="_drawer"]:visited,
+// [href="#_drawer"]:hover,
+// [href="#_drawer"]:focus,
+// [href="#_drawer"]:visited,
+// [for="_drawer"]:hover,
+// [for="_drawer"]:focus,
+// [for="_drawer"]:visited,
+// #_navbar a[aria-controls="_drawer"]:hover,
+// #_navbar a[aria-controls="_drawer"]:focus,
+// #_navbar a[aria-controls="_drawer"]:visited,
+// #_navbar a[href="#_drawer"]:hover,
+// #_navbar a[href="#_drawer"]:focus,
+// #_navbar a[href="#_drawer"]:visited,
+// #_navbar label[for="_drawer"]:hover,
+// #_navbar label[for="_drawer"]:focus,
+// #_navbar label[for="_drawer"]:visited,
+// #_navbar button[aria-controls="_drawer"]:hover,
+// #_navbar button[aria-controls="_drawer"]:focus,
+// #_navbar button[aria-controls="_drawer"]:visited {
+//   text-decoration: none !important;
+//   border: 0 !important;
+//   border-bottom: 0 !important;
+//   font-weight: 400 !important;
+// }
+
+/* Prevent nested elements from reintroducing styles (commented out as redundant) */
+// a[aria-controls="_drawer"] *,
+// a[href="#_drawer"] *,
+// label[for="_drawer"] *,
+// button[aria-controls="_drawer"] *,
+// [aria-controls="_drawer"] *,
+// [href="#_drawer"] *,
+// [for="_drawer"] *,
+// #_navbar a[aria-controls="_drawer"] *,
+// #_navbar a[href="#_drawer"] *,
+// #_navbar label[for="_drawer"] *,
+// #_navbar button[aria-controls="_drawer"] * {
+//   text-decoration: none !important;
+//   font-weight: inherit !important;
+// }
+
+/* Match actual hamburger markup: <a id="_menu" href="#_drawer--opened" class="nav-btn"> */
+#_navbar #_menu,
+#_menu,
+#_navbar a.nav-btn[href^="#_drawer"],
+a.nav-btn[href^="#_drawer"] {
   text-decoration: none !important;
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
 }
 
-/* States */
-a[aria-controls="_drawer"]:hover,
-a[aria-controls="_drawer"]:focus,
-a[aria-controls="_drawer"]:visited,
-a[href="#_drawer"]:hover,
-a[href="#_drawer"]:focus,
-a[href="#_drawer"]:visited,
-[aria-controls="_drawer"]:hover,
-[aria-controls="_drawer"]:focus,
-[aria-controls="_drawer"]:visited,
-[href="#_drawer"]:hover,
-[href="#_drawer"]:focus,
-[href="#_drawer"]:visited {
+#_navbar #_menu:hover,
+#_navbar #_menu:focus,
+#_navbar #_menu:visited,
+#_menu:hover,
+#_menu:focus,
+#_menu:visited,
+#_navbar a.nav-btn[href^="#_drawer"]:hover,
+#_navbar a.nav-btn[href^="#_drawer"]:focus,
+#_navbar a.nav-btn[href^="#_drawer"]:visited,
+a.nav-btn[href^="#_drawer"]:hover,
+a.nav-btn[href^="#_drawer"]:focus,
+a.nav-btn[href^="#_drawer"]:visited {
   text-decoration: none !important;
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
 }
 
-/* Prevent nested elements from reintroducing styles */
-a[aria-controls="_drawer"] *,
-a[href="#_drawer"] *,
-[aria-controls="_drawer"] *,
-[href="#_drawer"] * {
+#_navbar #_menu *,
+#_menu *,
+#_navbar a.nav-btn[href^="#_drawer"] *,
+a.nav-btn[href^="#_drawer"] * {
   text-decoration: none !important;
   font-weight: inherit !important;
 }
