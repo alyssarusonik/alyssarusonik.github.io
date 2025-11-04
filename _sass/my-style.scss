@@ -194,33 +194,72 @@ li {
 
 /* Restore Hydejack defaults for navbar links (no custom resets) */
 
-/* Navbar hamburger: remove underline and bold, keep theme hover */
-#_navbar [aria-controls="_drawer"],
-#_navbar a[href="#_drawer"] {
+/* Navbar hamburger (redundant; see global override below) */
+// #_navbar [aria-controls="_drawer"],
+// #_navbar a[href="#_drawer"] {
+//   text-decoration: none !important;
+//   border: 0 !important;
+//   border-bottom: 0 !important;
+//   font-weight: 400 !important;
+// }
+
+/* Navbar hamburger states (redundant; see global override below) */
+// #_navbar [aria-controls="_drawer"]:hover,
+// #_navbar [aria-controls="_drawer"]:focus,
+// #_navbar [aria-controls="_drawer"]:visited,
+// #_navbar a[href="#_drawer"]:hover,
+// #_navbar a[href="#_drawer"]:focus,
+// #_navbar a[href="#_drawer"]:visited {
+//   text-decoration: none !important;
+//   border: 0 !important;
+//   border-bottom: 0 !important;
+//   font-weight: 400 !important;
+// }
+
+/* Navbar hamburger nested elements (redundant; see global override below) */
+// #_navbar [aria-controls="_drawer"] *,
+// #_navbar a[href="#_drawer"] * {
+//   text-decoration: none !important;
+//   font-weight: inherit;
+// }
+
+/* Ensure hamburger trigger never looks like a link, anywhere (broader scope) */
+a[aria-controls="_drawer"],
+a[href="#_drawer"],
+[aria-controls="_drawer"],
+[href="#_drawer"] {
   text-decoration: none !important;
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
 }
 
-/* Ensure no underline/bold on hover/focus/visited states as well */
-#_navbar [aria-controls="_drawer"]:hover,
-#_navbar [aria-controls="_drawer"]:focus,
-#_navbar [aria-controls="_drawer"]:visited,
-#_navbar a[href="#_drawer"]:hover,
-#_navbar a[href="#_drawer"]:focus,
-#_navbar a[href="#_drawer"]:visited {
+/* States */
+a[aria-controls="_drawer"]:hover,
+a[aria-controls="_drawer"]:focus,
+a[aria-controls="_drawer"]:visited,
+a[href="#_drawer"]:hover,
+a[href="#_drawer"]:focus,
+a[href="#_drawer"]:visited,
+[aria-controls="_drawer"]:hover,
+[aria-controls="_drawer"]:focus,
+[aria-controls="_drawer"]:visited,
+[href="#_drawer"]:hover,
+[href="#_drawer"]:focus,
+[href="#_drawer"]:visited {
   text-decoration: none !important;
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
 }
 
-/* As a safety net, prevent nested elements from introducing underline */
-#_navbar [aria-controls="_drawer"] *,
-#_navbar a[href="#_drawer"] * {
+/* Prevent nested elements from reintroducing styles */
+a[aria-controls="_drawer"] *,
+a[href="#_drawer"] *,
+[aria-controls="_drawer"] *,
+[href="#_drawer"] * {
   text-decoration: none !important;
-  font-weight: inherit;
+  font-weight: inherit !important;
 }
 
 
