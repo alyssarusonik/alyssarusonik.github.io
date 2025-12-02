@@ -8,8 +8,8 @@ grouped: true
 ---
 
 ## Working Papers
-[**"Institutional Commitment and Economic Revival: Evidence from Palace-Building in Renaissance Rome"**](https://dx.doi.org/10.2139/ssrn.5168235){:target="_blank"}{:.no-mark-external}
-<!-- (/assets/pdf/Sixtus_IV_paper.pdf){:target="_blank"}{:.no-mark-external} -->
+[**"Institutional Commitment and Economic Revival: Evidence from Palace-Building in Renaissance Rome"**](/assets/pdf/Sixtus_IV_paper.pdf){:target="_blank"}{:.no-mark-external}
+<!-- (https://dx.doi.org/10.2139/ssrn.5168235){:target="_blank"}{:.no-mark-external} -->
 <details>
 <summary>Abstract</summary>
 <small>
