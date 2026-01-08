@@ -19,11 +19,11 @@ grouped: true
 - _Awards:_ [Georges Gallais-Hamonno Prize in Historical Finance](https://www.linkedin.com/pulse/research-prize-historical-finance-honoring-memory-georges-diebolt-iiuwf/?trackingId=f73LogxVR%2FuLVKJgIuCt4A%3D%3D){:target="_blank"}{:.no-mark-external}; [Frank D. Lewis Memorial Prize](https://www.hec.edu/en/doctoral-program/news/finance-phd-student-alyssa-rusonik-s-paper-renaissance-economic-recovery-receives-award){:target="_blank"}{:.no-mark-external}; Arthur Hosios Award.
 <!-- - _Media coverage:_ [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external} -->
 
-[**"Population Ethics: A Position-Based Axiomatic Approach"**](/assets/pdf/rusonik_gilboa_population_ethics.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external}
+[**"Lexitarian Population Ethics: A Position-Based Axiomatic Approach"**](/assets/pdf/rusonik_samuelson_gilboa_lexitarianism.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external} and [Larry Samuelson](https://sites.google.com/site/larryatyale/){:target="_blank"}{:.no-mark-external}
 <details>
 <summary>Abstract</summary>
 <small>
-A social planner considers the far future, asking which population profile should be preferred, where none of the people involved has been born or conceived yet. A population's profile is given by the number of individuals who are in each possible position. Thus, symmetry among individuals who are in the same position is presupposed by the model. The model allows populations to be of different sizes, and assumes that they can be compared by the social planner. Three simple conditions characterize the relations that can be represented in a utilitarian way, that is, by assigning a number to each position so that profiles are ranked according to the sum of utilities across individuals.
+The paper makes three contributions to the preference aggregation and population ethics literatures. First, we propose the "lexitarian" criterion, according to which the social planner maximizes a vector of lexicographically-ranked utilitarian functions. Second, we suggest modeling the social choice problem using “positions” as a primitive, and axiomatize the lexitarian rule in this context. Third, we argue for an interpretation of the model in terms of the impersonal approach, while prioritizing needs over wants.
 </small>
 </details>
 
