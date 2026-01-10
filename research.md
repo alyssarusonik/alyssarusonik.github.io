@@ -30,7 +30,7 @@ The paper makes three contributions to the preference aggregation and population
 ## Work in Progress
 **"The Evolving Credibility of Stories"**
 
-**"Biases in Prospective Learning"** with [Yves Le Yaouanq](https://sites.google.com/view/yvesleyaouanq){:target="_blank"}{:.no-mark-external} and [Peter Schwardmann](https://sites.google.com/site/peterschwardmann/home){:target="_blank"}{:.no-mark-external}
+**"Prospective and Retrospective Valuation of Financial Information"** with [Yves Le Yaouanq](https://sites.google.com/view/yvesleyaouanq){:target="_blank"}{:.no-mark-external} and [Peter Schwardmann](https://sites.google.com/site/peterschwardmann/home){:target="_blank"}{:.no-mark-external}
 
 
 ## Pre-PhD Publications
