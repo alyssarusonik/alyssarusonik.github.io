@@ -1,3 +1,15 @@
+/* ------------------------------
+   SIDEBAR MENU FONT SIZE
+   ------------------------------ */
+.sidebar .sidebar-about .sidebar-title,
+.sidebar .sidebar-about h2 {
+  font-size: 1.2em !important;
+}
+
+.sidebar-nav .sidebar-nav-item {
+  font-size: 1.3em !important;
+}
+
 .dl-table {
   a {
     @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
