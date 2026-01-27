@@ -8,7 +8,7 @@ grouped: true
 ---
 
 ## Working Papers
-[**"Institutional Commitment and Economic Revival: Evidence from Palace-Building in Renaissance Rome"**](/assets/pdf/rusonik_rome.pdf){:target="_blank"}{:.no-mark-external}
+[**"Institutional Commitment and Economic Revival: Evidence from Palace-Building in Renaissance Rome"**](/assets/pdf/rusonik_roman_palace-building.pdf){:target="_blank"}{:.no-mark-external}
 <!-- (https://dx.doi.org/10.2139/ssrn.5168235){:target="_blank"}{:.no-mark-external} -->
 <small>
 <details>
@@ -17,7 +17,7 @@ grouped: true
 </details>
 </small>
 
-<small>_Supplementary materials:_ [Online Appendix](/assets/pdf/rusonik_rome--online_appendix.pdf){:target="_blank"}{:.no-mark-external}</small>
+<small>_Supplementary materials:_ [Online Appendix](/assets/pdf/rusonik_roman_palace-building--online_appendix.pdf){:target="_blank"}{:.no-mark-external}</small>
 
 <small>_Awards:_ [Georges Gallais-Hamonno Prize in Historical Finance](https://www.linkedin.com/pulse/research-prize-historical-finance-honoring-memory-georges-diebolt-iiuwf/?trackingId=f73LogxVR%2FuLVKJgIuCt4A%3D%3D){:target="_blank"}{:.no-mark-external}; [Frank D. Lewis Memorial Prize](https://www.hec.edu/en/doctoral-program/news/finance-phd-student-alyssa-rusonik-s-paper-renaissance-economic-recovery-receives-award){:target="_blank"}{:.no-mark-external}; Arthur Hosios Award.</small>
 <!-- _Media coverage:_ [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external} -->
