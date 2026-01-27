@@ -13,10 +13,12 @@ grouped: true
 <small>
 <details>
 <summary>Abstract</summary>
-	I study the recovery of the Roman economy following the papacy’s absence (1309-1377), specifically, an era of palace-building resulting in the construction of over 31% of palaces built in Roman history. Using a novel dataset, I show that the late-15th-century palace-construction boom was triggered by credible institutional commitment. A reform of inheritance laws (1475) allowed prelates to bequeath their possessions, causing a significant increase of prelate palace-building. Initial prelate investment guaranteed the papacy would remain in Rome long-term, which eventually incentivized laymen to invest. I disentangle the effect of commitment to long-term presence from contemporaneous papal presence to show that the irreversibility of institutional change is a necessary condition for successful intervention.</small>
+	I study the recovery of the Roman economy following the papacy's absence (1309-1377), specifically, an era of palace-building resulting in the construction of over 31% of palaces built in Roman history. Using a novel dataset, I show that the late-15th-century palace-construction boom was triggered by credible institutional commitment. A reform of inheritance laws (1475) allowed prelates to bequeath their possessions, causing a significant increase of prelate palace-building. Initial prelate investment guaranteed the papacy would remain in Rome long-term, which eventually incentivized laymen to invest. I disentangle the effect of commitment to long-term presence from contemporaneous papal presence to show that the irreversibility of institutional change is a necessary condition for successful intervention.
 </details>
 </small>
+
 <small>_Supplementary materials:_ [Online Appendix](/assets/pdf/rusonik_rome--online_appendix.pdf){:target="_blank"}{:.no-mark-external}</small>
+
 <small>_Awards:_ [Georges Gallais-Hamonno Prize in Historical Finance](https://www.linkedin.com/pulse/research-prize-historical-finance-honoring-memory-georges-diebolt-iiuwf/?trackingId=f73LogxVR%2FuLVKJgIuCt4A%3D%3D){:target="_blank"}{:.no-mark-external}; [Frank D. Lewis Memorial Prize](https://www.hec.edu/en/doctoral-program/news/finance-phd-student-alyssa-rusonik-s-paper-renaissance-economic-recovery-receives-award){:target="_blank"}{:.no-mark-external}; Arthur Hosios Award.</small>
 <!-- _Media coverage:_ [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external} -->
 
