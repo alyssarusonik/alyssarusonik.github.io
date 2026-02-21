@@ -22,7 +22,13 @@ _Awards:_ [Georges Gallais-Hamonno Prize in Historical Finance](https://www.link
 [**"Lexitarian Population Ethics: A Position-Based Axiomatic Approach"**](/assets/pdf/rusonik_samuelson_gilboa_lexitarianism.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external} and [Larry Samuelson](https://sites.google.com/site/larryatyale/){:target="_blank"}{:.no-mark-external}
 <details>
 <summary><small>Abstract</small></summary>
-<small>The paper makes three contributions to the preference aggregation and population ethics literatures. First, we propose the "lexitarian" criterion, according to which the social planner maximizes a vector of lexicographically-ranked utilitarian functions. Second, we suggest modeling the social choice problem using "positions" as a primitive, and axiomatize the lexitarian rule in this context. Third, we argue for an interpretation of the model in terms of the impersonal approach, while prioritizing needs over wants.</small>
+<small>The paper makes three contributions to the preference aggregation
+and population ethics literatures. First, we propose the “lexitarian”
+criterion, a generalization of utilitarianism, according to which the social planner maximizes a vector of lexicographically-ranked utilitarian
+functions. Second, we suggest modeling the social choice problem using
+“positions” as a primitive, and axiomatize the lexitarian rule in this
+context. Third, we argue for an interpretation of the model in terms of
+the sympathetic paradigm, while prioritizing needs over wants.</small>
 </details>
 
 ## Work in Progress
