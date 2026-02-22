@@ -165,6 +165,9 @@ details summary {
   cursor: pointer;
   list-style: none;
   display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: rgba(128, 128, 128, 0.5);
+  transition: text-decoration-color 0.2s ease;
 
   &::-webkit-details-marker {
     display: none;
@@ -179,9 +182,12 @@ details summary {
     display: inline-block;
     transition: transform 0.2s ease;
     vertical-align: middle;
+    text-decoration: none;
   }
 
+  &:hover,
   &:focus {
+    text-decoration-color: rgba(0, 0, 0, 0.9);
     outline: none;
   }
 }
@@ -194,6 +200,25 @@ details[open] summary::before {
 @media (prefers-color-scheme: dark) {
   details summary::before {
     color: #666;
+  }
+
+  details summary {
+    text-decoration-color: rgba(170, 170, 170, 0.5);
+
+    &:hover,
+    &:focus {
+      text-decoration-color: inherit;
+    }
+  }
+}
+
+.dark-mode details summary,
+[data-theme="dark"] details summary {
+  text-decoration-color: rgba(170, 170, 170, 0.5);
+
+  &:hover,
+  &:focus {
+    text-decoration-color: inherit;
   }
 }
 
