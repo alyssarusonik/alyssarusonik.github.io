@@ -202,18 +202,6 @@ details[open] summary::before {
   color: #666;
 }
 
-/* ------------------------------
-   PAPER META ALIGNMENT
-   Indent supplementary/awards lines to align with the "Abstract" text
-   that sits after the caret (▸ + margin ≈ 1em).
-   The <details> itself is NOT indented so the caret stays flush.
-   ------------------------------ */
-.paper-meta > p,
-.paper-meta > small {
-  display: block;
-  padding-left: 1em;
-}
-
 /* keep external link icons subtle if enabled */
 .no-mark-external::after {
   display: none;
