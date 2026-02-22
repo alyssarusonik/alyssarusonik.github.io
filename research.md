@@ -20,16 +20,18 @@ _Awards:_ [Georges Gallais-Hamonno Prize in Historical Finance](https://www.link
 <!-- _Media coverage:_ [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external} -->
 
 [**"Lexitarian Population Ethics: A Position-Based Axiomatic Approach"**](/assets/pdf/rusonik_samuelson_gilboa_lexitarianism.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external} and [Larry Samuelson](https://sites.google.com/site/larryatyale/){:target="_blank"}{:.no-mark-external}
+<div class="paper-meta">
 <details>
 <summary><small>Abstract</small></summary>
 <small>The paper makes three contributions to the preference aggregation
-and population ethics literatures. First, we propose the “lexitarian”
+and population ethics literatures. First, we propose the "lexitarian"
 criterion, a generalization of utilitarianism, according to which the social planner maximizes a vector of lexicographically-ranked utilitarian
 functions. Second, we suggest modeling the social choice problem using
-“positions” as a primitive, and axiomatize the lexitarian rule in this
+"positions" as a primitive, and axiomatize the lexitarian rule in this
 context. Third, we argue for an interpretation of the model in terms of
 the sympathetic paradigm, while prioritizing needs over wants.</small>
 </details>
+</div>
 
 ## Work in Progress
 **"The Evolving Credibility of Stories"**

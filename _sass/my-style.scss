@@ -156,6 +156,52 @@ li {
   text-decoration-color: inherit !important;  /* match text color */
 }
 
+/* ------------------------------
+   ABSTRACT DETAILS/SUMMARY TOGGLE
+   ------------------------------ */
+
+/* Hide the default browser disclosure triangle */
+details summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Subtle rotating caret before "Abstract" */
+  &::before {
+    content: "▸";
+    font-size: 0.65em;
+    color: #aaa;
+    margin-right: 0.3em;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    vertical-align: middle;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  details summary::before {
+    color: #666;
+  }
+}
+
+.dark-mode details summary::before,
+[data-theme="dark"] details summary::before {
+  color: #666;
+}
+
 /* keep external link icons subtle if enabled */
 .no-mark-external::after {
   display: none;
