@@ -28,6 +28,7 @@ grouped: true
 
 ## Work in Progress
 **"The Evolving Credibility of Stories"**
+
 <small>
 <!-- &emsp;Supplementary materials: [Online Appendix](/assets/pdf/rusonik_roman_palace-building--online_appendix.pdf){:target="_blank"}{:.no-mark-external}<br> -->
 &emsp;Awards: AF2I (French Association of Institutional Investors) Young Researcher Grant
