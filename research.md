@@ -17,9 +17,11 @@ grouped: true
 </details>
 
 <small>&emsp;Supplementary materials: [Online Appendix](/assets/pdf/rusonik_roman_palace-building--online_appendix.pdf){:target="_blank"}{:.no-mark-external}<br>
-&emsp;Awards: [Georges Gallais-Hamonno Prize in Historical Finance](https://www.linkedin.com/pulse/research-prize-historical-finance-honoring-memory-georges-diebolt-iiuwf/?trackingId=f73LogxVR%2FuLVKJgIuCt4A%3D%3D){:target="_blank"}{:.no-mark-external}; [Frank D. Lewis Memorial Prize](https://www.hec.edu/en/doctoral-program/news/finance-phd-student-alyssa-rusonik-s-paper-renaissance-economic-recovery-receives-award){:target="_blank"}{:.no-mark-external}; Arthur Hosios Award.</small>
-_Media coverage:_ [The Conversation (French)](https://theconversation.com/durant-la-renaissance-le-retour-des-papes-a-rome-crea-une-ere-de-construction-de-palais-sans-precedent-pour-la-ville-eternelle-268262){:target="_blank"}{:.no-mark-external}
+&emsp;Awards: [Georges Gallais-Hamonno Prize in Historical Finance](https://www.linkedin.com/pulse/research-prize-historical-finance-honoring-memory-georges-diebolt-iiuwf/?trackingId=f73LogxVR%2FuLVKJgIuCt4A%3D%3D){:target="_blank"}{:.no-mark-external}; [Frank D. Lewis Memorial Prize](https://www.hec.edu/en/doctoral-program/news/finance-phd-student-alyssa-rusonik-s-paper-renaissance-economic-recovery-receives-award){:target="_blank"}{:.no-mark-external}; Arthur Hosios Award.<br>
+&emsp;Media coverage: [The Conversation (French)](https://theconversation.com/durant-la-renaissance-le-retour-des-papes-a-rome-crea-une-ere-de-construction-de-palais-sans-precedent-pour-la-ville-eternelle-268262){:target="_blank"}{:.no-mark-external}
 <!-- [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external} -->
+</small>
+
 
 [**"Lexitarian Population Ethics: A Position-Based Axiomatic Approach"**](/assets/pdf/rusonik_samuelson_gilboa_lexitarianism.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external} and [Larry Samuelson](https://sites.google.com/site/larryatyale/){:target="_blank"}{:.no-mark-external}
 <details>
