@@ -23,14 +23,16 @@ grouped: true
 </small>
 
 
-[**"Lexitarian Population Ethics: A Position-Based Axiomatic Approach"**](/assets/pdf/rusonik_samuelson_gilboa_lexitarianism.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external} and [Larry Samuelson](https://sites.google.com/site/larryatyale/){:target="_blank"}{:.no-mark-external}
+
+[**"Lexitarianism: A Needs-Based Approach to Public Policy"**](/assets/pdf/rusonik_samuelson_gilboa_lexitarianism.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external} and [Larry Samuelson](https://sites.google.com/site/larryatyale/){:target="_blank"}{:.no-mark-external}
 <details>
 <summary><small>Abstract</small></summary>
-<small>The paper makes three contributions to the preference aggregation and population ethics literatures. First, we propose the "lexitarian" criterion, a generalization of utilitarianism, according to which the social planner maximizes a vector of lexicographically-ranked utilitarian functions. Second, we suggest modeling the social choice problem using "positions" as a primitive, and axiomatize the lexitarian rule in this context. Third, we argue for an interpretation of the model in terms of the sympathetic paradigm, while prioritizing needs over wants.</small>
+<small>Utilitarian models typically do not attempt to capture distinctions between various determinants of well-being: they do not distinguish between wants and needs, and they assume that all determinants of wellbeing are commensurate. In contrast, welfare policies seem to reflect these distinctions. We propose to bridge the gap between utilitarian theory and economic practice by introducing _lexitarianism_: the maximization of a vector of  lexicographically-ordered welfare functions, as applied to needs. We propose a formulation of the social choice problem based on the concept of a position and use it to axiomatize lexitarianism as well as its extensions to multiple time periods and uncertainty.
+</small>
 </details>
 
 ## Work in Progress
-**"The Evolving Credibility of Stories"**
+**"Narratives and Financial Markets"**
 
 <small>
 <!-- &emsp;Supplementary materials: [Online Appendix](/assets/pdf/rusonik_roman_palace-building--online_appendix.pdf){:target="_blank"}{:.no-mark-external}<br> -->
