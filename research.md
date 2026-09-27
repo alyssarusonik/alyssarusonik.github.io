@@ -18,7 +18,7 @@ grouped: true
 
 <small>&emsp;Supplementary materials: [Online Appendix](/assets/pdf/rusonik_roman_palace-building--online_appendix.pdf){:target="_blank"}{:.no-mark-external}<br>
 &emsp;Awards: [Georges Gallais-Hamonno Prize in Historical Finance](https://www.linkedin.com/pulse/research-prize-historical-finance-honoring-memory-georges-diebolt-iiuwf/?trackingId=f73LogxVR%2FuLVKJgIuCt4A%3D%3D){:target="_blank"}{:.no-mark-external}; [Frank D. Lewis Memorial Prize](https://www.hec.edu/en/doctoral-program/news/finance-phd-student-alyssa-rusonik-s-paper-renaissance-economic-recovery-receives-award){:target="_blank"}{:.no-mark-external}; Arthur Hosios Award.<br>
-&emsp;Media coverage: [The Conversation (French)](https://theconversation.com/durant-la-renaissance-le-retour-des-papes-a-rome-crea-une-ere-de-construction-de-palais-sans-precedent-pour-la-ville-eternelle-268262){:target="_blank"}{:.no-mark-external}
+&emsp;Media coverage: The Conversation [(English)](https://theconversation.com/palaces-and-the-pope-the-fascinating-story-of-how-renaissance-rome-was-rebuilt-290876){:target="_blank"}{:.no-mark-external} [(French)](https://theconversation.com/durant-la-renaissance-le-retour-des-papes-a-rome-crea-une-ere-de-construction-de-palais-sans-precedent-pour-la-ville-eternelle-268262){:target="_blank"}{:.no-mark-external}
 <!-- [Knowledge HEC](https://www.hec.edu/en/how-papal-law-influenced-economic-recovery-renaissance-rome){:target="_blank"}{:.no-mark-external} -->
 </small>
 
