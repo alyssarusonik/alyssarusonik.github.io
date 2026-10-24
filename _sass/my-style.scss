@@ -10,14 +10,12 @@
   font-size: 1.4em !important;
 }
 
-/* Email envelope stays white, with no underline. */
+/* Email envelope stays white. Hydejack draws the underline. */
 .sidebar .sidebar-social a,
 .sidebar .sidebar-social a:hover,
 .sidebar .sidebar-social a:focus,
 .sidebar .sidebar-social a:active {
   color: #fff !important;
-  border-bottom-color: transparent !important;
-  text-decoration: none !important;
 }
 
 .dl-table {
