@@ -3,11 +3,26 @@
    ------------------------------ */
 .sidebar .sidebar-about .sidebar-title,
 .sidebar .sidebar-about h2 {
-  font-size: 1.2em !important;
+  font-size: 1.3em !important;
 }
 
 .sidebar-nav .sidebar-nav-item {
-  font-size: 1.3em !important;
+  font-size: 1.4em !important;
+}
+
+/* NEW CHANGE
+/* Email envelope: quiet until hover or click.
+   Hydejack draws this from the email in _data/authors.yml. */
+.sidebar .sidebar-social a {
+  color: rgba(255, 255, 255, 0.4) !important;
+  border-bottom-color: transparent !important;
+}
+
+.sidebar .sidebar-social a:hover,
+.sidebar .sidebar-social a:focus,
+.sidebar .sidebar-social a:active {
+  color: #fff !important;
+  border-bottom-color: #fff !important;
 }
 
 .dl-table {
@@ -263,8 +278,7 @@ a.nav-btn[href^="#_drawer"] {
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
-  /* color: var(--ui-icon-color) !important; */ /* unified icon color (commented out) */
-  color: inherit !important;
+  color: var(--menu-text) !important;
 }
 
 #_navbar #_menu:hover,
@@ -283,8 +297,7 @@ a.nav-btn[href^="#_drawer"]:visited {
   border: 0 !important;
   border-bottom: 0 !important;
   font-weight: 400 !important;
-  /* color: var(--ui-icon-color) !important; */ /* unified icon color (commented out) */
-  color: inherit !important;
+  color: var(--menu-text) !important;
 }
 
 #_navbar #_menu *,
