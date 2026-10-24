@@ -17,7 +17,7 @@ hide_description: true
 <img src="/assets/img/profile.jpg" width="300" style="width: 100%;">
 </div>
 
-<div style="font-size: 1.2em;">
+<div style="font-size: 1em;">
 Welcome to my website! I am a fifth-year PhD student in Finance at HEC Paris. 
 
 <br><br>
