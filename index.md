@@ -21,10 +21,10 @@ hide_description: true
 Welcome to my website! I am a fifth-year PhD student in Finance at HEC Paris. 
 
 <br><br>
-<em>I will be on the 2026-2027 academic job market.</em> 
+My work lies at the intersection of financial economics and decision theory.  I pair formal modeling structures from microeconomic and finance theory with new measurement tools, drawing on text-as-data approaches, historical data, and experiments, to unpack the "black box" of belief-formation.
 
 <br><br>
-My work lies at the intersection of financial economics and decision theory.  I pair formal modeling structures from microeconomic and finance theory with new measurement tools, drawing on text-as-data approaches, historical data, and experiments, to unpack the "black box" of belief-formation.
+<em>I am on the 2026-2027 academic job market.</em> 
 
 <br><br>
 You can reach me at alyssa.rusonik@hec.edu, and my CV is available <a href="/docs/CV/AlyssaRusonik_CV.pdf" target="_blank">here</a>.
