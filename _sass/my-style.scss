@@ -10,19 +10,14 @@
   font-size: 1.4em !important;
 }
 
-/* NEW CHANGE
-/* Email envelope: quiet until hover or click.
-   Hydejack draws this from the email in _data/authors.yml. */
-.sidebar .sidebar-social a {
-  color: rgba(255, 255, 255, 0.4) !important;
-  border-bottom-color: transparent !important;
-}
-
+/* Email envelope stays white, with no underline. */
+.sidebar .sidebar-social a,
 .sidebar .sidebar-social a:hover,
 .sidebar .sidebar-social a:focus,
 .sidebar .sidebar-social a:active {
   color: #fff !important;
-  border-bottom-color: #fff !important;
+  border-bottom-color: transparent !important;
+  text-decoration: none !important;
 }
 
 .dl-table {
