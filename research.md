@@ -8,6 +8,20 @@ grouped: true
 ---
 
 ## Working Papers
+**"Narrative Cacophony in Financial Markets" [Job Market Paper]** 
+<details>
+<summary><small>Abstract</small></summary>
+<small>
+ 	I develop a methodology for extracting "narratives" -- endogenously-emerging interpretational patterns -- from unstructured text. I define "narrative cacophony" as the presence of many salient narratives with contradictory pricing implications. Applying the methodology to 21,771 news articles from the 2025 tariff "Liberation Day" episode, I study how cacophony mediates the incorporation of public information. I document that cacophony dampens trade volume. Moreover, when there is less trade because of cacophony, narratives explain a smaller share of variation in daily returns. The incorporation of narrative information also slows and a delayed pricing-in effect obtains. Because markets update prices through agents' trades in the presence of disagreement, these findings suggest that information that is difficult to interpret (gives rise to cacophonous narratives) is less well-incorporated by markets as agents are more reluctant to trade. 
+  </small>
+</details>
+
+<small>
+<!-- &emsp;Supplementary materials: [Online Appendix](/assets/pdf/rusonik_roman_palace-building--online_appendix.pdf){:target="_blank"}{:.no-mark-external}<br> -->
+&emsp;Awards: AF2I (French Association of Institutional Investors) Young Researcher Grant
+</small>
+
+
 [**"Institutional Commitment and Economic Revival: Evidence from Palace-Building in Renaissance Rome"**](/assets/pdf/rusonik_roman_palace-building.pdf){:target="_blank"}{:.no-mark-external}
 <!-- (https://dx.doi.org/10.2139/ssrn.5168235){:target="_blank"}{:.no-mark-external} -->
 <details>
@@ -23,22 +37,14 @@ grouped: true
 </small>
 
 
-
 [**"Lexitarianism: A Needs-Based Approach to Public Policy"**](/assets/pdf/rusonik_samuelson_gilboa_lexitarianism.pdf){:target="_blank"}{:.no-mark-external} with [Itzhak Gilboa](https://itzhakgilboa.weebly.com/){:target="_blank"}{:.no-mark-external} and [Larry Samuelson](https://sites.google.com/site/larryatyale/){:target="_blank"}{:.no-mark-external}
 <details>
 <summary><small>Abstract</small></summary>
-<small>Utilitarian models typically do not attempt to capture distinctions between various determinants of well-being: they do not distinguish between wants and needs, and they assume that all determinants of wellbeing are commensurate. In contrast, welfare policies seem to reflect these distinctions. We propose to bridge the gap between utilitarian theory and economic practice by introducing _lexitarianism_: the maximization of a vector of  lexicographically-ordered welfare functions, as applied to needs. We propose a formulation of the social choice problem based on the concept of a position and use it to axiomatize lexitarianism as well as its extensions to multiple time periods and uncertainty.
+<small>Utilitarian models typically do not attempt to capture distinctions between various determinants of well-being: they do not distinguish between wants and needs, and they assume that all determinants of wellbeing are commensurate. In contrast, welfare policies seem to reflect these distinctions. We propose to bridge the gap between utilitarian theory and economic practice by introducing <em>lexitarianism</em>: the maximization of a vector of  lexicographically-ordered welfare functions, as applied to needs. We propose a formulation of the social choice problem based on the concept of a position and use it to axiomatize lexitarianism as well as its extensions to multiple time periods and uncertainty.
 </small>
 </details>
 
 ## Work in Progress
-**"Narratives and Financial Markets"**
-
-<small>
-<!-- &emsp;Supplementary materials: [Online Appendix](/assets/pdf/rusonik_roman_palace-building--online_appendix.pdf){:target="_blank"}{:.no-mark-external}<br> -->
-&emsp;Awards: AF2I (French Association of Institutional Investors) Young Researcher Grant
-</small>
-
 **"Prospective and Retrospective Valuation of Financial Information"** with [Yves Le Yaouanq](https://sites.google.com/view/yvesleyaouanq){:target="_blank"}{:.no-mark-external} and [Peter Schwardmann](https://sites.google.com/site/peterschwardmann/home){:target="_blank"}{:.no-mark-external}
 
 
